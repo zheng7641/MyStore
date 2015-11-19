@@ -1,11 +1,19 @@
 /**
  * index
  */
-function mouseOver()
-{
-    document.getElementById('nav_right').style.display = "none";
-}
 function mouseOut()
 {
-    document.getElementById('nav_right').style.display = "block";
+    document.getElementById('subitem').style.display = "block";
+}
+function mouseOver()
+{
+    document.getElementById('subitem').style.display = "block";
+}
+
+function subitem_mouseOver(){
+	document.getElementById('subitem').style.display = "block";
+}
+function subitem_mouseOut()
+{
+    document.getElementById('subitem').style.display = "none";
 }

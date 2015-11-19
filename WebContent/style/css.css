@@ -23,7 +23,7 @@ a:link, a:visited {
 
 a:hover, a:active {
 	color: #6C6C6C;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /*头部 */
@@ -152,8 +152,8 @@ a:hover, a:active {
 }
 
 .nav_item:HOVER {
-	background: white;
-	border-right: solid 2px #C81623;
+	background: #f7f7f7;
+	border-right: solid 0px #C81623;
 }
 
 .nav_item:HOVER .nav_item_a a {
@@ -174,10 +174,80 @@ a:hover, a:active {
 }
 
 .nav_right { /* 右边 */
-	height:367px;
-	width:788px;
-	background:#f7f7f7;
+	height: 367px;
+	width: 788px;
 	display: block;
-	border: 1px solid;
 	float: left;
+	border: solid 1px;
+}
+
+.subitem {
+	margin: -5px 0 0 0;
+	background: #f7f7f7;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.subitems {
+	width: 748px;
+	height: 100%;
+	margin: 0 20px;
+}
+
+.subitems a:HOVER {
+	color: red;
+}
+
+.subitems_dl {
+	overflow: hidden;
+	margin: 5px 0;
+	padding: 0 3px;
+}
+
+.subitems_dt {
+	position: relative;
+	float: left;
+	width: 54px;
+	padding: 10px 10px 0 0;
+	text-align: right;
+	font-weight: 700;
+}
+
+.subitems_dd {
+	width: 678px;
+	float: left;
+	padding: 6px 0;
+	margin: 0;
+}
+
+.subitems_dd_a {
+	float: left;
+	padding: 0 8px;
+	margin: 4px 0;
+	line-height: 16px;
+	height: 16px;
+	border-left: 1px solid #e0e0e0;
+	white-space: nowrap;
+}
+
+/* 图片轮播*/
+.slider_container {
+	margin: 30px auto;
+	width: 400px;
+	height: 280px;
+	position: relative;
+	border: 20px solid;
+	border-color: #fff;
+	border-bottom-width: 100px;
+	background-color: #f5f5f5;
+	box-shadow: #666 0 0 5px;
+}
+
+.slider_container div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	filter: alpha(opacity = 0);
 }

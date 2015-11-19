@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #8A8985;
+}
+
+img {
+	border: 0;
+}
+
+span {
+	color: #6C6C6C;
+}
+
+a:link, a:visited {
+	color: #6C6C6C;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #6C6C6C;
+	text-decoration: underline;
+}
+
+/*头部 */
+#header {
+	overflow: hidden;
+	width: 100%;
+}
+
+.wrapper {
+	width: 1210px;
+	height: 30px;
+	margin: 0 auto;
+	font-size: 14px;
+	background: #F5F5F5;
+}
+
+.left {
+	margin: 7px;
+	padding: 0px 0px 0px 40px;
+	float: left;
+}
+
+.right {
+	padding: 0px 40px 0px 0px;
+	margin: 7px;
+	float: right;
+}
+
+/*搜索框*/
+#search {
+	overflow: hidden;
+	width: 100%;
+}
+
+.search_wrapper {
+	width: 1210px;
+	height: 100px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+
+.logo {
+	position: relative;
+	padding: 12px 20px;
+	width: 197px;
+	float: left;
+}
+
+.search_1 {
+	position: relative;
+	width: auto;
+	float: left;
+	padding: 27px 150px;
+}
+
+.search_1_input {
+	height: 40px;
+	width: 382px;
+	font-size: 14px;
+}
+
+.search_1_button {
+	height: 46px;
+	width: 80px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*导航栏*/
+#navigation {
+	overflow: hidden;
+	width: 100%;
+	border-bottom: 2px solid #B1191A;
+}
+
+.nav {
+	width: 1210px;
+	margin: 0 auto;
+}
+
+.sort {
+	width: 210px;
+	height: 44px;
+	background: #B1191A;
+}
+
+.sort span {
+	width: 190px;
+	height: 44px;
+	padding: 0 30px;
+	background: #B1191A;
+	font: 400 15px/44px "microsoft yahei";
+	color: #fff;
+	text-decoration: none;
+}
+/* 竖向导航 */
+#wall {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+.wall {
+	border: 1px solid;
+	position: relative;
+	width: 1210px;
+	margin: 0 auto;
+}
+
+.nav_full {
+	width: 1000px;
+	overflow: hidden;
+}
+
+.nav_left { /* 左边 */
+	float: left;
+	width: 210px;
+	background: #C81623;
+}
+
+.nav_item {
+	position: relative;
+	z-index: 1;
+	height: 41px;
+	color: #111;
+}
+
+.nav_item:HOVER {
+	background: white;
+	border-right: solid 2px #C81623;
+}
+
+.nav_item:HOVER .nav_item_a a {
+	color: #B61D1D;
+}
+
+.nav_item_a {
+	padding: 11px 30px;
+}
+
+.nav_item a {
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	text-decoration: none;
+	cursor: auto;
+}
+
+.nav_right { /* 右边 */
+	height:367px;
+	width:788px;
+	background:#f7f7f7;
+	display: block;
+	border: 1px solid;
+	float: left;
+}

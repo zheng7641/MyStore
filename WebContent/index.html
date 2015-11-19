@@ -48,7 +48,7 @@
 			<!-- 导航全部 -->
 			<div class="nav_full">
 				<!-- 左边的竖向导航 -->
-				<div class="nav_left">
+				<div class="nav_left" onmouseout="mouseOut()">
 					<div class="nav_item" onmouseover="mouseOver()">
 						<div class="nav_item_a">
 							<a href="#">家用电器</a>
@@ -97,8 +97,8 @@
 					</div>
 				</div>
 				<div id="nav_right" class="nav_right">
-					<div id="subitem" class="subitem" onmouseover="subitem_mouseOver()"
-						onmouseout="subitem_mouseOut()">
+					<div id="subitem" class="subitem" onmouseover="mouseOver()"
+						onmouseout="mouseOut()">
 						<div class="subitems">
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
@@ -159,19 +159,19 @@
 					</div>
 					<!-- 照片墙 -->
 					<div class="slider_container">
-						<div>
+						<div class="slider_containers">
 							<img src="image/image1.jpg">
 						</div>
-						<div>
+						<div class="slider_containers">
 							<img src="image/image2.jpg">
 						</div>
-						<div>
+						<div class="slider_containers">
 							<img src="image/image3.jpg">
 						</div>
-						<div>
+						<div class="slider_containers">
 							<img src="image/image4.jpg">
 						</div>
-						<div>
+						<div class="slider_containers">
 							<img src="image/image5.jpg">
 						</div>
 					</div>
@@ -181,7 +181,6 @@
 				<!-- 通知 -->
 			</div>
 		</div>
-	</div>
 	</div>
 </body>
 </html>

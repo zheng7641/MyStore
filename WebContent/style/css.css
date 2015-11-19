@@ -10,6 +10,8 @@ body {
 
 img {
 	border: 0;
+	width: 100%;
+	height:100%;
 }
 
 span {
@@ -138,16 +140,17 @@ a:hover, a:active {
 	overflow: hidden;
 }
 
-.nav_left { /* 左边 */
+.nav_left { /* 左边 -----------*/
 	float: left;
 	width: 210px;
+	height:420px;
 	background: #C81623;
 }
 
 .nav_item {
 	position: relative;
 	z-index: 1;
-	height: 41px;
+	height: 46px;
 	color: #111;
 }
 
@@ -173,12 +176,13 @@ a:hover, a:active {
 	cursor: auto;
 }
 
-.nav_right { /* 右边 */
-	height: 367px;
+.nav_right { /* 右边---------------- */
+	height: 420px;
 	width: 788px;
 	display: block;
 	float: left;
-	border: solid 1px;
+	/* border: solid 1px;
+	border-left: 0px; */
 }
 
 .subitem {
@@ -231,17 +235,17 @@ a:hover, a:active {
 	white-space: nowrap;
 }
 
-/* 图片轮播*/
+/* 图片轮播 788*492*/
 .slider_container {
-	margin: 30px auto;
-	width: 400px;
-	height: 280px;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
 	position: relative;
-	border: 20px solid;
-	border-color: #fff;
-	border-bottom-width: 100px;
-	background-color: #f5f5f5;
-	box-shadow: #666 0 0 5px;
+}
+
+.slider_containers{
+	width: 100%;
+	height: 100%;
 }
 
 .slider_container div {
@@ -250,4 +254,67 @@ a:hover, a:active {
 	left: 0;
 	opacity: 0;
 	filter: alpha(opacity = 0);
+}
+.slider_container div {
+    -webkit-animation: round 25s linear infinite;
+            animation: round 25s linear infinite;
+}
+
+@-webkit-keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+@keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+.slider_container div:nth-child(5) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+
+.slider_container div:nth-child(4) {
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+}
+
+.slider_container div:nth-child(3) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+}
+
+.slider_container div:nth-child(2) {
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+}
+
+.slider_container div:nth-child(1) {
+    -webkit-animation-delay: 20s;
+            animation-delay: 20s;
 }

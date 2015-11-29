@@ -12,7 +12,98 @@
 	<!-- 头部标题栏和搜索框和导航标题 -->
 	<%@ include file="partofpage/head.jsp"%>
 	<div id="crumb-bar">
-		
+		<div class="crumb-bar">
+			<div class="crumbs">
+				<span>个人闲置</span>
+				<span>></span>
+				<a href="#">手机</a>
+			</div>
+		</div>
+	</div>
+	<div id="listcontent">
+		<div class="listcontent">
+			<div class="list-left">
+				<div class="list-left-title">
+					<h4>今日最火</h4>
+				</div>
+				<div class="list-left-content">
+					<ul>
+						<li class="llc-li">
+							<div class="llc-img">
+								<a href="#">
+									<img width="190" height="190" src="goods/lanqiu.jpg">
+								</a>
+							</div>
+							<div class="llc-name">
+								<a href="#">
+									<em>Apple iPhone 5s (A1530) 16GB 金色 移动联通4G手机</em>
+								</a>
+							</div>
+							<div class="llc-price">
+								<a href="#">
+									<span class="llc-price-num">￥</span>
+									<span class="llc-price-num">2000</span>
+								</a>
+							</div>
+						</li>
+						<li class="llc-li">
+							<div class="llc-img">
+								<a href="#">
+									<img width="190" height="190" src="goods/lanqiu.jpg">
+								</a>
+							</div>
+							<div class="llc-name">
+								<a href="#">
+									<em>Apple iPhone 5s (A1530) 16GB 金色 移动联通4G手机</em>
+								</a>
+							</div>
+							<div class="llc-price">
+								<a href="#">
+									<span class="llc-price-num">￥</span>
+									<span class="llc-price-num">2000</span>
+								</a>
+							</div>
+						</li>
+						<li class="llc-li">
+							<div class="llc-img">
+								<a href="#">
+									<img width="190" height="190" src="goods/lanqiu.jpg">
+								</a>
+							</div>
+							<div class="llc-name">
+								<a href="#">
+									<em>Apple iPhone 5s (A1530) 16GB 金色 移动联通4G手机</em>
+								</a>
+							</div>
+							<div class="llc-price">
+								<a href="#">
+									<span class="llc-price-num">￥</span>
+									<span class="llc-price-num">2000</span>
+								</a>
+							</div>
+						</li>
+						<li class="llc-li">
+							<div class="llc-img">
+								<a href="#">
+									<img width="190" height="190" src="goods/lanqiu.jpg">
+								</a>
+							</div>
+							<div class="llc-name">
+								<a href="#">
+									<em>Apple iPhone 5s (A1530) 16GB 金色 移动联通4G手机</em>
+								</a>
+							</div>
+							<div class="llc-price">
+								<a href="#">
+									<span class="llc-price-num">￥</span>
+									<span class="llc-price-num">2000</span>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

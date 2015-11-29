@@ -3,9 +3,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "microsoft yahei";
-	font-size: 14px;
-	color: #000;
+	font: 12px/150% Arial,Verdana,"\5b8b\4f53";
 }
 
 em{
@@ -62,6 +60,10 @@ a:hover, a:active {
 	float: left;
 }
 
+.left span{
+	color: #666;
+}
+
 .right {
 	padding: 0px 40px 0px 0px;
 	margin: 7px;
@@ -102,10 +104,15 @@ a:hover, a:active {
 }
 
 .search_1_button {
-	height: 46px;
-	width: 80px;
-	display: inline-block;
-	vertical-align: top;
+    width: 82px;
+    height: 45px;
+    background: #B61D1D;
+    border: none;
+    line-height: 1;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    cursor: pointer;
 }
 
 /*导航栏*/

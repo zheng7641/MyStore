@@ -126,51 +126,9 @@
 								<div class="lrc-views">
 									<span>已有200人评论 </span>
 								</div>
-							</div>
-						</li>
-						<li class="lr-content-items">
-							<div class="lrc-items">
-								<div class="lrc-img">
-									<a href="#"> <img width="220" height="220"
-										src="goods/lanqiu.jpg">
-									</a>
-
-								</div>
-								<div class="lrc-name">
-									<a href="#"> <em>Apple iPhone 5s (A1530) 16GB 金色
-											移动联通4G手机</em>
-									</a>
-								</div>
-								<div class="lrc-price">
-									<a href="#"> <span class="lrc-price-num">￥</span> <span
-										class="lrc-price-num">2000.00</span>
-									</a>
-								</div>
 								<div class="lrc-views">
-									<span>已有200人评论 </span>
-								</div>
-							</div>
-						</li>
-						<li class="lr-content-items">
-							<div class="lrc-items">
-								<div class="lrc-img">
-									<a href="#"> <img width="220" height="220"
-										src="goods/lanqiu.jpg">
-									</a>
-
-								</div>
-								<div class="lrc-name">
-									<a href="#"> <em>Apple iPhone 5s (A1530) 16GB 金色
-											移动联通4G手机</em>
-									</a>
-								</div>
-								<div class="lrc-price">
-									<a href="#"> <span class="lrc-price-num">￥</span> <span
-										class="lrc-price-num">2000.00</span>
-									</a>
-								</div>
-								<div class="lrc-views">
-									<span>已有200人评论 </span>
+									<span>2015-11-29 21:00</span>
+									<span>发表</span>
 								</div>
 							</div>
 						</li>
@@ -195,51 +153,9 @@
 								<div class="lrc-views">
 									<span>已有200人评论 </span>
 								</div>
-							</div>
-						</li>
-						<li class="lr-content-items">
-							<div class="lrc-items">
-								<div class="lrc-img">
-									<a href="#"> <img width="220" height="220"
-										src="goods/lanqiu.jpg">
-									</a>
-
-								</div>
-								<div class="lrc-name">
-									<a href="#"> <em>Apple iPhone 5s (A1530) 16GB 金色
-											移动联通4G手机</em>
-									</a>
-								</div>
-								<div class="lrc-price">
-									<a href="#"> <span class="lrc-price-num">￥</span> <span
-										class="lrc-price-num">2000.00</span>
-									</a>
-								</div>
 								<div class="lrc-views">
-									<span>已有200人评论 </span>
-								</div>
-							</div>
-						</li>
-						<li class="lr-content-items">
-							<div class="lrc-items">
-								<div class="lrc-img">
-									<a href="#"> <img width="220" height="220"
-										src="goods/lanqiu.jpg">
-									</a>
-
-								</div>
-								<div class="lrc-name">
-									<a href="#"> <em>Apple iPhone 5s (A1530) 16GB 金色
-											移动联通4G手机</em>
-									</a>
-								</div>
-								<div class="lrc-price">
-									<a href="#"> <span class="lrc-price-num">￥</span> <span
-										class="lrc-price-num">2000.00</span>
-									</a>
-								</div>
-								<div class="lrc-views">
-									<span>已有200人评论 </span>
+									<span>2015-11-29 21:00</span>
+									<span>发表</span>
 								</div>
 							</div>
 						</li>
@@ -264,51 +180,9 @@
 								<div class="lrc-views">
 									<span>已有200人评论 </span>
 								</div>
-							</div>
-						</li>
-						<li class="lr-content-items">
-							<div class="lrc-items">
-								<div class="lrc-img">
-									<a href="#"> <img width="220" height="220"
-										src="goods/lanqiu.jpg">
-									</a>
-
-								</div>
-								<div class="lrc-name">
-									<a href="#"> <em>Apple iPhone 5s (A1530) 16GB 金色
-											移动联通4G手机</em>
-									</a>
-								</div>
-								<div class="lrc-price">
-									<a href="#"> <span class="lrc-price-num">￥</span> <span
-										class="lrc-price-num">2000.00</span>
-									</a>
-								</div>
 								<div class="lrc-views">
-									<span>已有200人评论 </span>
-								</div>
-							</div>
-						</li>
-						<li class="lr-content-items">
-							<div class="lrc-items">
-								<div class="lrc-img">
-									<a href="#"> <img width="220" height="220"
-										src="goods/lanqiu.jpg">
-									</a>
-
-								</div>
-								<div class="lrc-name">
-									<a href="#"> <em>Apple iPhone 5s (A1530) 16GB 金色
-											移动联通4G手机</em>
-									</a>
-								</div>
-								<div class="lrc-price">
-									<a href="#"> <span class="lrc-price-num">￥</span> <span
-										class="lrc-price-num">2000.00</span>
-									</a>
-								</div>
-								<div class="lrc-views">
-									<span>已有200人评论 </span>
+									<span>2015-11-29 21:00</span>
+									<span>发表</span>
 								</div>
 							</div>
 						</li>
@@ -333,51 +207,9 @@
 								<div class="lrc-views">
 									<span>已有200人评论 </span>
 								</div>
-							</div>
-						</li>
-						<li class="lr-content-items">
-							<div class="lrc-items">
-								<div class="lrc-img">
-									<a href="#"> <img width="220" height="220"
-										src="goods/lanqiu.jpg">
-									</a>
-
-								</div>
-								<div class="lrc-name">
-									<a href="#"> <em>Apple iPhone 5s (A1530) 16GB 金色
-											移动联通4G手机</em>
-									</a>
-								</div>
-								<div class="lrc-price">
-									<a href="#"> <span class="lrc-price-num">￥</span> <span
-										class="lrc-price-num">2000.00</span>
-									</a>
-								</div>
 								<div class="lrc-views">
-									<span>已有200人评论 </span>
-								</div>
-							</div>
-						</li>
-						<li class="lr-content-items">
-							<div class="lrc-items">
-								<div class="lrc-img">
-									<a href="#"> <img width="220" height="220"
-										src="goods/lanqiu.jpg">
-									</a>
-
-								</div>
-								<div class="lrc-name">
-									<a href="#"> <em>Apple iPhone 5s (A1530) 16GB 金色
-											移动联通4G手机</em>
-									</a>
-								</div>
-								<div class="lrc-price">
-									<a href="#"> <span class="lrc-price-num">￥</span> <span
-										class="lrc-price-num">2000.00</span>
-									</a>
-								</div>
-								<div class="lrc-views">
-									<span>已有200人评论 </span>
+									<span>2015-11-29 21:00</span>
+									<span>发表</span>
 								</div>
 							</div>
 						</li>
@@ -402,6 +234,10 @@
 								<div class="lrc-views">
 									<span>已有200人评论 </span>
 								</div>
+								<div class="lrc-views">
+									<span>2015-11-29 21:00</span>
+									<span>发表</span>
+								</div>
 							</div>
 						</li>
 						<li class="lr-content-items">
@@ -425,6 +261,10 @@
 								<div class="lrc-views">
 									<span>已有200人评论 </span>
 								</div>
+								<div class="lrc-views">
+									<span>2015-11-29 21:00</span>
+									<span>发表</span>
+								</div>
 							</div>
 						</li>
 						<li class="lr-content-items">
@@ -448,6 +288,10 @@
 								<div class="lrc-views">
 									<span>已有200人评论 </span>
 								</div>
+								<div class="lrc-views">
+									<span>2015-11-29 21:00</span>
+									<span>发表</span>
+								</div>
 							</div>
 						</li>
 						<li class="lr-content-items">
@@ -470,6 +314,226 @@
 								</div>
 								<div class="lrc-views">
 									<span>已有200人评论 </span>
+								</div>
+								<div class="lrc-views">
+									<span>2015-11-29 21:00</span>
+									<span>发表</span>
+								</div>
+							</div>
+						</li>
+						<li class="lr-content-items">
+							<div class="lrc-items">
+								<div class="lrc-img">
+									<a href="#"> <img width="220" height="220"
+										src="goods/lanqiu.jpg">
+									</a>
+
+								</div>
+								<div class="lrc-name">
+									<a href="#"> <em>Apple iPhone 5s (A1530) 16GB 金色
+											移动联通4G手机</em>
+									</a>
+								</div>
+								<div class="lrc-price">
+									<a href="#"> <span class="lrc-price-num">￥</span> <span
+										class="lrc-price-num">2000.00</span>
+									</a>
+								</div>
+								<div class="lrc-views">
+									<span>已有200人评论 </span>
+								</div>
+								<div class="lrc-views">
+									<span>2015-11-29 21:00</span>
+									<span>发表</span>
+								</div>
+							</div>
+						</li>
+						<li class="lr-content-items">
+							<div class="lrc-items">
+								<div class="lrc-img">
+									<a href="#"> <img width="220" height="220"
+										src="goods/lanqiu.jpg">
+									</a>
+
+								</div>
+								<div class="lrc-name">
+									<a href="#"> <em>Apple iPhone 5s (A1530) 16GB 金色
+											移动联通4G手机</em>
+									</a>
+								</div>
+								<div class="lrc-price">
+									<a href="#"> <span class="lrc-price-num">￥</span> <span
+										class="lrc-price-num">2000.00</span>
+									</a>
+								</div>
+								<div class="lrc-views">
+									<span>已有200人评论 </span>
+								</div>
+								<div class="lrc-views">
+									<span>2015-11-29 21:00</span>
+									<span>发表</span>
+								</div>
+							</div>
+						</li>
+						<li class="lr-content-items">
+							<div class="lrc-items">
+								<div class="lrc-img">
+									<a href="#"> <img width="220" height="220"
+										src="goods/lanqiu.jpg">
+									</a>
+
+								</div>
+								<div class="lrc-name">
+									<a href="#"> <em>Apple iPhone 5s (A1530) 16GB 金色
+											移动联通4G手机</em>
+									</a>
+								</div>
+								<div class="lrc-price">
+									<a href="#"> <span class="lrc-price-num">￥</span> <span
+										class="lrc-price-num">2000.00</span>
+									</a>
+								</div>
+								<div class="lrc-views">
+									<span>已有200人评论 </span>
+								</div>
+								<div class="lrc-views">
+									<span>2015-11-29 21:00</span>
+									<span>发表</span>
+								</div>
+							</div>
+						</li>
+						<li class="lr-content-items">
+							<div class="lrc-items">
+								<div class="lrc-img">
+									<a href="#"> <img width="220" height="220"
+										src="goods/lanqiu.jpg">
+									</a>
+
+								</div>
+								<div class="lrc-name">
+									<a href="#"> <em>Apple iPhone 5s (A1530) 16GB 金色
+											移动联通4G手机</em>
+									</a>
+								</div>
+								<div class="lrc-price">
+									<a href="#"> <span class="lrc-price-num">￥</span> <span
+										class="lrc-price-num">2000.00</span>
+									</a>
+								</div>
+								<div class="lrc-views">
+									<span>已有200人评论 </span>
+								</div>
+								<div class="lrc-views">
+									<span>2015-11-29 21:00</span>
+									<span>发表</span>
+								</div>
+							</div>
+						</li>
+						<li class="lr-content-items">
+							<div class="lrc-items">
+								<div class="lrc-img">
+									<a href="#"> <img width="220" height="220"
+										src="goods/lanqiu.jpg">
+									</a>
+
+								</div>
+								<div class="lrc-name">
+									<a href="#"> <em>Apple iPhone 5s (A1530) 16GB 金色
+											移动联通4G手机</em>
+									</a>
+								</div>
+								<div class="lrc-price">
+									<a href="#"> <span class="lrc-price-num">￥</span> <span
+										class="lrc-price-num">2000.00</span>
+									</a>
+								</div>
+								<div class="lrc-views">
+									<span>已有200人评论 </span>
+								</div>
+								<div class="lrc-views">
+									<span>2015-11-29 21:00</span>
+									<span>发表</span>
+								</div>
+							</div>
+						</li>
+						<li class="lr-content-items">
+							<div class="lrc-items">
+								<div class="lrc-img">
+									<a href="#"> <img width="220" height="220"
+										src="goods/lanqiu.jpg">
+									</a>
+
+								</div>
+								<div class="lrc-name">
+									<a href="#"> <em>Apple iPhone 5s (A1530) 16GB 金色
+											移动联通4G手机</em>
+									</a>
+								</div>
+								<div class="lrc-price">
+									<a href="#"> <span class="lrc-price-num">￥</span> <span
+										class="lrc-price-num">2000.00</span>
+									</a>
+								</div>
+								<div class="lrc-views">
+									<span>已有200人评论 </span>
+								</div>
+								<div class="lrc-views">
+									<span>2015-11-29 21:00</span>
+									<span>发表</span>
+								</div>
+							</div>
+						</li>
+						<li class="lr-content-items">
+							<div class="lrc-items">
+								<div class="lrc-img">
+									<a href="#"> <img width="220" height="220"
+										src="goods/lanqiu.jpg">
+									</a>
+
+								</div>
+								<div class="lrc-name">
+									<a href="#"> <em>Apple iPhone 5s (A1530) 16GB 金色
+											移动联通4G手机</em>
+									</a>
+								</div>
+								<div class="lrc-price">
+									<a href="#"> <span class="lrc-price-num">￥</span> <span
+										class="lrc-price-num">2000.00</span>
+									</a>
+								</div>
+								<div class="lrc-views">
+									<span>已有200人评论 </span>
+								</div>
+								<div class="lrc-views">
+									<span>2015-11-29 21:00</span>
+									<span>发表</span>
+								</div>
+							</div>
+						</li>
+						<li class="lr-content-items">
+							<div class="lrc-items">
+								<div class="lrc-img">
+									<a href="#"> <img width="220" height="220"
+										src="goods/lanqiu.jpg">
+									</a>
+
+								</div>
+								<div class="lrc-name">
+									<a href="#"> <em>Apple iPhone 5s (A1530) 16GB 金色
+											移动联通4G手机</em>
+									</a>
+								</div>
+								<div class="lrc-price">
+									<a href="#"> <span class="lrc-price-num">￥</span> <span
+										class="lrc-price-num">2000.00</span>
+									</a>
+								</div>
+								<div class="lrc-views">
+									<span>已有200人评论 </span>
+								</div>
+								<div class="lrc-views">
+									<span>2015-11-29 21:00</span>
+									<span>发表</span>
 								</div>
 							</div>
 						</li>

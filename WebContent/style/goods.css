@@ -1,0 +1,131 @@
+@CHARSET "UTF-8";
+
+.left_image {
+	float: left;
+	width: 60%;
+	border: 2px solid #ebefee;
+	overflow: hidden;
+	background: #F5F5F5;
+	width: 60%;
+}
+
+.right_intro {
+	width: 38%;
+	float: left;
+	height: 512px;
+}
+
+.right_intro_property {
+	width: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.right_intro_title {
+	font-size: 22px;
+	line-height: 31px;
+	margin: 20px 0;
+}
+
+.right_intro_detailed {
+	overflow: hidden;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #eee;
+}
+
+.right_intro_detailed_span1 {
+	float: left;
+	width: 80px;
+	font: 14px/1.5 tahoma, arial, simsun;
+	color: #333;
+	white-space: nowrap;
+}
+
+.right_intro_detailed_span2 {
+	color: #e4393c;
+	font-weight: 400;
+	font-family: verdana;
+	font-size: 20px;
+}
+
+.right_intro_detailed1 {
+	padding-top: 10px;
+	overflow: hidden;
+}
+
+.right_intro_detailed1 a:HOVER {
+	text-decoration: underline;
+}
+
+.right_intro_buynow {
+	margin: 20px 0 20px 30px;
+	height: 65px;
+	overflow: hidden;
+}
+
+.right_intro_buynow_btn {
+	display: block;
+	height: 45px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 202px;
+	background: url("../image/buynow1.png") no-repeat;
+}
+
+.goods_left_intro {
+	width: 730px;
+}
+
+.goods_left_intro_list {
+	margin-top: 30px;
+	overflow: hidden;
+	border-bottom: 2px solid #d7d7d7;
+}
+
+.goods_left_intro_btn {
+	width: 200px;
+	height: 40px;
+	border-right:1px solid #d7d7d7;
+	border-top:1px solid #d7d7d7;
+	border-left:1px solid #d7d7d7;
+}
+
+.goods_left_intro_btn_1 {
+	float: left;
+	overflow: hidden;
+	padding: 0 25px;
+	color: #333;
+	font: 700 16px/39px "Microsoft YaHei";
+}
+
+.goods_left_intro_btn_1:HOVER {
+	color:red;
+}
+
+.goods_left_intro_detailed{
+	/* height:400px; */
+	overflow: hidden;
+	display:block;
+}
+
+.goods_left_intro_message{
+	height:400px;
+	overflow: hidden;
+	display:block;
+	border: 1px solid;
+}
+
+.glid_title{
+	padding:
+	color: #333;
+	font: 700 16px/39px "Microsoft YaHei";
+}
+
+.glid_word{
+	font: 14px/26px tahoma,arial,simsun;
+	margin-bottom: 25px;
+}
+
+.glid_img{
+	
+}

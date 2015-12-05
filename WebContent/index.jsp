@@ -150,7 +150,7 @@
 			<div class="wall_right">
 				<div class="notify">
 					<div class="nt">
-						<span>消息快报</span> <a href="#">更多&nbsp></a>
+						<span>消息快报</span> <a href="#">更多&nbsp;></a>
 					</div>
 					<div class="nc">
 						<ul>
@@ -166,7 +166,7 @@
 				<div class="nav_button">
 					<div class="nav_btn_1">
 						<a href="#"> <span class="btn_title">发布闲置</span> <span
-							class="btn_subtitle">闲置换钱&nbsp快速出售</span>
+							class="btn_subtitle">闲置换钱&nbsp;快速出售</span>
 						</a>
 					</div>
 					<div class="app_intro">
@@ -257,22 +257,22 @@
 					<span class="content_push_sub_price">$11111</span>
 				</a>
 				<a href="#" class="content_push_sub">
-					<img class="content_push_sub_img" src="goods/lanqiu.jpg" />
+					<img class="content_push_sub_img" src="goods/1.jpg" />
 					<span class="content_push_sub_title">非常非常非常非常非常非常非常非常</span>
 					<span class="content_push_sub_price">$11111</span>
 				</a>
 				<a href="#" class="content_push_sub">
-					<img class="content_push_sub_img" src="goods/lanqiu.jpg" />
+					<img class="content_push_sub_img" src="goods/2.jpg" />
 					<span class="content_push_sub_title">非常非常非常非常非常非常非常非常</span>
 					<span class="content_push_sub_price">$11111</span>
 				</a>
 				<a href="#" class="content_push_sub">
-					<img class="content_push_sub_img" src="goods/lanqiu.jpg" />
+					<img class="content_push_sub_img" src="goods/3.jpg" />
 					<span class="content_push_sub_title">非常非常非常非常非常非常非常非常</span>
 					<span class="content_push_sub_price">$11111</span>
 				</a>
 				<a href="#" class="content_push_sub_last">
-					<img class="content_push_sub_img" src="goods/lanqiu.jpg" />
+					<img class="content_push_sub_img" src="goods/4.jpg" />
 					<span class="content_push_sub_title">非常非常非常非常非常非常非常非常</span>
 					<span class="content_push_sub_price">$11111</span>
 				</a>
@@ -317,22 +317,22 @@
 					<span class="content_push_sub_price">$11111</span>
 				</a>
 				<a href="#" class="content_push_sub">
-					<img class="content_push_sub_img" src="goods/lanqiu.jpg" />
+					<img class="content_push_sub_img" src="goods/31.jpg" />
 					<span class="content_push_sub_title">非常非常非常非常非常非常非常非常</span>
 					<span class="content_push_sub_price">$11111</span>
 				</a>
 				<a href="#" class="content_push_sub">
-					<img class="content_push_sub_img" src="goods/lanqiu.jpg" />
+					<img class="content_push_sub_img" src="goods/32.jpg" />
 					<span class="content_push_sub_title">非常非常非常非常非常非常非常非常</span>
 					<span class="content_push_sub_price">$11111</span>
 				</a>
 				<a href="#" class="content_push_sub">
-					<img class="content_push_sub_img" src="goods/lanqiu.jpg" />
+					<img class="content_push_sub_img" src="goods/33.jpg" />
 					<span class="content_push_sub_title">非常非常非常非常非常非常非常非常</span>
 					<span class="content_push_sub_price">$11111</span>
 				</a>
 				<a href="#" class="content_push_sub_last">
-					<img class="content_push_sub_img" src="goods/lanqiu.jpg" />
+					<img class="content_push_sub_img" src="goods/34.jpg" />
 					<span class="content_push_sub_title">非常非常非常非常非常非常非常非常</span>
 					<span class="content_push_sub_price">$11111</span>
 				</a>

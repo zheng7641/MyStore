@@ -65,19 +65,78 @@
 				</div>
 				<div class="goods_left_intro_detailed">
 					<h3 class="glid_title">商品详情</h3>
-					<div class="glid_word">三星note3lite7508v国行 无拆无修 包装盒还在 原装耳机 充电器 电池 手机无任何问题aa
-						三个角有掉漆 屏幕无划痕三星note3lite7508v国行 aaaa无拆无修 包装盒还在 原装耳机 充电器 电池 手机无任何问题
-						三个角有掉漆 屏幕无划痕三星note3lite7508v国行 aaaa无拆无修 包装盒还在 原装耳机 充电器 电池 手机无任何问题
-						三个角有掉漆 屏幕无划痕三星note3lite7508v国行 无拆无修 包装aa盒还在 原装耳机 充电器 电池 手机无任何问题
-						三个角有掉漆 屏幕无划痕三星note3lite7508v国行 无拆aaaa无修 包装盒还在 原装耳机 充电器 电池 手机无任何问题
-						三个角有掉漆 屏幕无划痕
-					</div>
+					<div class="glid_word">三星note3lite7508v国行 无拆无修 包装盒还在 原装耳机 充电器
+						电池 手机无任何问题aa 三个角有掉漆 屏幕无划痕三星note3lite7508v国行 aaaa无拆无修 包装盒还在 原装耳机
+						充电器 电池 手机无任何问题 三个角有掉漆 屏幕无划痕三星note3lite7508v国行 aaaa无拆无修 包装盒还在 原装耳机
+						充电器 电池 手机无任何问题 三个角有掉漆 屏幕无划痕三星note3lite7508v国行 无拆无修 包装aa盒还在 原装耳机
+						充电器 电池 手机无任何问题 三个角有掉漆 屏幕无划痕三星note3lite7508v国行 无拆aaaa无修 包装盒还在 原装耳机
+						充电器 电池 手机无任何问题 三个角有掉漆 屏幕无划痕</div>
 				</div>
 				<div class="goods_left_intro_message">
-					<h3 class="glid_title">留言</h3>
+					<h3 class="glid_title">图片</h3>
+					<div class="glid_img">
+						<img src="goods/34.jpg"
+							onload='if (this.width>728 || this.height>556) if (this.width/this.height>728/556) this.width=728; else this.height=556;'>
+						<img src="goods/8.jpg"
+							onload='if (this.width>728 || this.height>556) if (this.width/this.height>728/556) this.width=728; else this.height=556;'>
+						<img src="goods/9.jpg"
+							onload='if (this.width>728 || this.height>556) if (this.width/this.height>728/556) this.width=728; else this.height=556;'>
+					</div>
 				</div>
 			</div>
-			<div class="goods_right_othergoods"></div>
+			<div class="goods_right_othergoods">
+				<h4 class="glid_title">卖家其他商品</h4>
+				<ul>
+					<li class="gro_sub">
+						<div class="gro_sub_1">
+							<a href="#"> 
+								<img src="goods/9.jpg" onload='if (this.width>80 || this.height>62) if (this.width/this.height>80/62) this.width=80; else this.height=62;'>
+							</a>
+						</div>
+						<div class="gro_sub_2">
+							<a href="#" class="gro_sub_title"> 
+								<span>近全新iphone6银色64g国行</span>
+							</a>
+						</div>
+					</li>
+					<li class="gro_sub">
+						<div class="gro_sub_1">
+							<a href="#"> 
+								<img src="goods/9.jpg" onload='if (this.width>80 || this.height>62) if (this.width/this.height>80/62) this.width=80; else this.height=62;'>
+							</a>
+						</div>
+						<div class="gro_sub_2">
+							<a href="#" class="gro_sub_title"> 
+								<span>近全新iphone6银色64g国行</span>
+							</a>
+						</div>
+					</li>
+					<li class="gro_sub">
+						<div class="gro_sub_1">
+							<a href="#"> 
+								<img src="goods/9.jpg" onload='if (this.width>80 || this.height>62) if (this.width/this.height>80/62) this.width=80; else this.height=62;'>
+							</a>
+						</div>
+						<div class="gro_sub_2">
+							<a href="#" class="gro_sub_title"> 
+								<span>近全新iphone6银色64g国行</span>
+							</a>
+						</div>
+					</li>
+					<li class="gro_sub">
+						<div class="gro_sub_1">
+							<a href="#"> 
+								<img src="goods/9.jpg" onload='if (this.width>80 || this.height>62) if (this.width/this.height>80/62) this.width=80; else this.height=62;'>
+							</a>
+						</div>
+						<div class="gro_sub_2">
+							<a href="#" class="gro_sub_title"> 
+								<span>近全新iphone6银色64g国行</span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 

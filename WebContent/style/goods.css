@@ -6,7 +6,6 @@
 	border: 2px solid #ebefee;
 	overflow: hidden;
 	background: #F5F5F5;
-	width: 60%;
 }
 
 .right_intro {
@@ -73,7 +72,9 @@
 }
 
 .goods_left_intro {
+	float: left;
 	width: 730px;
+	overflow: hidden;
 }
 
 .goods_left_intro_list {
@@ -85,9 +86,9 @@
 .goods_left_intro_btn {
 	width: 200px;
 	height: 40px;
-	border-right:1px solid #d7d7d7;
-	border-top:1px solid #d7d7d7;
-	border-left:1px solid #d7d7d7;
+	border-right: 1px solid #d7d7d7;
+	border-top: 1px solid #d7d7d7;
+	border-left: 1px solid #d7d7d7;
 }
 
 .goods_left_intro_btn_1 {
@@ -99,33 +100,70 @@
 }
 
 .goods_left_intro_btn_1:HOVER {
-	color:red;
+	color: red;
 }
 
-.goods_left_intro_detailed{
+.goods_left_intro_detailed {
 	/* height:400px; */
 	overflow: hidden;
-	display:block;
+	display: block;
 }
 
-.goods_left_intro_message{
-	height:400px;
+.goods_left_intro_message {
 	overflow: hidden;
-	display:block;
-	border: 1px solid;
+	display: block;
 }
 
-.glid_title{
-	padding:
+.glid_title {margin-left：10px;
 	color: #333;
 	font: 700 16px/39px "Microsoft YaHei";
 }
 
-.glid_word{
-	font: 14px/26px tahoma,arial,simsun;
+.glid_word {
+	font: 14px/26px tahoma, arial, simsun;
 	margin-bottom: 25px;
 }
 
-.glid_img{
-	
+.glid_img img {
+	margin: 5px auto;
+}
+
+.goods_right_othergoods {
+	margin-top: 70px; float : right;
+	min-height: 300px;
+	width: 450px;
+	border: 1px solid #d7d7d7;
+	float: right;
+}
+
+.gro_sub {
+	display:block;	
+	height : 60px;
+	overflow: hidden;
+	border: 1px solid white;
+}
+
+.gro_sub:HOVER{
+	border: 1px solid #d7d7d7;
+}
+
+.gro_sub_1{
+	max-width: 80px;
+	float:left;
+}
+
+.gro_sub_2{
+	margin-left:90px;
+	height:60px;
+}
+
+.gro_sub_img {
+	height: 100%;
+	max-width: 80px;
+	float: left;
+}
+
+.gro_sub_title {
+	font-size:18px;
+	line-height: 3;
 }

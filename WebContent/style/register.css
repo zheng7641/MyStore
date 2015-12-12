@@ -1,0 +1,106 @@
+@CHARSET "UTF-8";
+
+h3, dl, dd, dt {
+	padding: 0;
+	margin: 0;
+}
+
+.nc-login-layout {
+	width: 850px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.nc-login {
+	width: 400px;
+	float: right;
+	border: #D8D8D8 solid 1px;
+}
+
+.nc-login-title {
+	background: #F9F9F9;
+}
+
+.nc-login-title h3 {
+	font-size: 18px;
+	font-family: "微软雅黑";
+	font-weight: 700;
+	line-height: 20px;
+	padding: 15px 0 25px 25px;
+	color: #555;
+}
+
+.nc-login-content {
+	background: #F9F9F9;
+	padding: 0 20px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.nc-login-content dl {
+	width: 100%;
+	float: left;
+	clear: both;
+	padding: 0;
+}
+
+.nc-login-content dt {
+	font-size: 14px;
+	line-height: 28px;
+	color: #777;
+	text-align: right;
+	width: 22%;
+	float: left;
+}
+
+.nc-login-content dd {
+	text-align: left;
+	width: 75%;
+	float: right;
+}
+
+.nc-login-content dd label {
+	clear: both;
+	float: left;
+	line-height: 24px;
+	height: 24px;
+	width: 210px;
+	margin: 0;
+}
+
+.nc-login-content dd .text {
+	font-family: Tahoma;
+	width: 220px;
+	height: 20px;
+	line-height: 20px;
+	background-color: #FFF;
+	padding: 3px !important;
+	border: solid 1px;
+	border-color: #BBB;
+}
+
+.nc-login-content dd .text:focus {
+	background-color: #FFF;
+	border-color: #EFA100;
+	outline: 2px solid #FFDC97;
+}
+
+.nc-login-content dd a {
+	line-height: 28px;
+	height: 28px;
+	text-align: left;
+	color: #999;
+}
+
+.nc-login-content .submit {
+	font-size: 14px;
+	font-weight: 700;
+	color: #FFF;
+	background: url(../image/register.png) no-repeat;
+	width: 98px;
+	height: 34px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	cursor: pointer;
+}

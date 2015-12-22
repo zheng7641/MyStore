@@ -4,8 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>二货</title>
+<title>用户管理</title>
 <link href="style/usermanager.css" rel="stylesheet" type="text/css" />
+<link href="style/css.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<!-- 头部标题栏 -->
@@ -57,7 +58,7 @@
 				</div>
 				<div class="um-right">
 					<div class="um-right-title">
-						<span>发布商品</span>
+						<span>已发布列表</span>
 					</div>
 					<div class="um-right-wrapper">
 						<div class="um-right-items">
@@ -228,5 +229,6 @@
 			</div>
 		</div>
 	</div>
+	<%@ include file="partofpage/foot.jsp" %>
 </body>
 </html>

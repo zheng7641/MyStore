@@ -163,9 +163,19 @@ textarea{resize:none;}
 	margin-left: 15px;
 }
 
+.um-right-items-top-item3{
+	margin-left:170px;
+}
+
 .um-right-items-top-item2 {
 	float: right;
 	margin-right: 25px;
+}
+
+.um-right-items-top-item33 {
+	float:left;
+	margin-left:25px;
+	line-height: 120px;	
 }
 
 .um-right-items-body {
@@ -188,10 +198,24 @@ textarea{resize:none;}
 }
 
 .um-right-items-money{
-	float:right;
-	margin-right:200px;
+	float:left;
+	margin-left:30px;
 	height:100%;
 	line-height: 120px;
+}
+
+.um-right-items-num{
+	float:left;
+	margin-left:175px;
+	height:100%;
+	line-height:120px;
+}
+
+.um-right-items-sum{
+	float:left;
+	margin-left:175px;
+	height:100%;
+	line-height:120px;
 }
 
 .um-right-items-watch{

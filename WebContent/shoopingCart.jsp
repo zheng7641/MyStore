@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>已发布列表</title>
+<title>购物车</title>
 <link href="style/usermanager.css" rel="stylesheet" type="text/css" />
 <link href="style/css.css" rel="stylesheet" type="text/css" />
+<!-- <link href="style/shoopingCart.css" rel="stylesheet" type="text/css" /> -->
 </head>
 <body>
 	<!-- 头部标题栏 -->
@@ -59,16 +60,17 @@
 				</div>
 				<div class="um-right">
 					<div class="um-right-title">
-						<span>已发布列表</span>
+						<span>购物车</span>
 					</div>
 					<div class="um-right-wrapper">
 						<div class="um-right-items">
 							<div class="um-right-items-top">
 								<span class="um-right-items-top-item">2015-11-11</span> <span
-									class="um-right-items-top-item">商品号:</span> <span>123123123123</span>
+									class="um-right-items-top-item">订单号:</span> <span>123123123123</span>
+								<span class="um-right-items-top-item3">单价</span> <span
+									class="um-right-items-top-item3">数量</span> <span
+									class="um-right-items-top-item3">总价</span>
 
-								<a class="um-right-items-top-item2" href="#">删除</a> <a
-									class="um-right-items-top-item2" href="#">修改</a>
 							</div>
 							<div class="um-right-items-body">
 								<div class="um-right-items-img">
@@ -78,15 +80,16 @@
 								<div class="um-right-items-intro">
 									<a href="#">这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称</a>
 								</div>
-								<div class="um-right-items-watch">
-									<span>已有</span>
-									<span>300</span>
-									<span>人浏览</span>
-								</div>
 								<div class="um-right-items-money">
-									<span>￥</span>
-									<span>400</span>
+									<span>￥</span> <span>400</span>
 								</div>
+								<div class="um-right-items-num">
+									<span>2</span>
+								</div>
+								<div class="um-right-items-sum">
+									<span>￥</span> <span>200</span>
+								</div>
+								<a class="um-right-items-top-item33" href="#">删除</a>
 							</div>
 						</div>
 						
@@ -94,9 +97,6 @@
 							<div class="um-right-items-top">
 								<span class="um-right-items-top-item">2015-11-11</span> <span
 									class="um-right-items-top-item">订单号:</span> <span>123123123123</span>
-
-								<a class="um-right-items-top-item2" href="#">删除</a> <a
-									class="um-right-items-top-item2" href="#">修改</a>
 							</div>
 							<div class="um-right-items-body">
 								<div class="um-right-items-img">
@@ -106,24 +106,48 @@
 								<div class="um-right-items-intro">
 									<a href="#">这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称</a>
 								</div>
-								<div class="um-right-items-watch">
-									<span>已有</span>
-									<span>300</span>
-									<span>人浏览</span>
+								<div class="um-right-items-money">
+									<span>￥</span> <span>400</span>
+								</div>
+								<div class="um-right-items-num">
+									<span>2</span>
+								</div>
+								<div class="um-right-items-sum">
+									<span>￥</span> <span>200</span>
+								</div>
+								<a class="um-right-items-top-item33" href="#">删除</a>
+							</div>
+						</div>
+
+						<div class="um-right-items">
+							<div class="um-right-items-top">
+								<span class="um-right-items-top-item">2015-11-11</span> <span
+									class="um-right-items-top-item">订单号:</span> <span>123123123123</span>
+							</div>
+							<div class="um-right-items-body">
+								<div class="um-right-items-img">
+									<img src="goods/lanqiu.jpg"
+										onload='if (this.width>100 || this.height>100) if (this.width/this.height>100/100) this.width=100; else this.height=100;'>
+								</div>
+								<div class="um-right-items-intro">
+									<a href="#">这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称</a>
 								</div>
 								<div class="um-right-items-money">
-									<span>￥</span>
-									<span>400</span>
+									<span>￥</span> <span>400</span>
 								</div>
+								<div class="um-right-items-num">
+									<span>2</span>
+								</div>
+								<div class="um-right-items-sum">
+									<span>￥</span> <span>200</span>
+								</div>
+								<a class="um-right-items-top-item33" href="#">删除</a>
 							</div>
 						</div>
 						<div class="um-right-items">
 							<div class="um-right-items-top">
 								<span class="um-right-items-top-item">2015-11-11</span> <span
 									class="um-right-items-top-item">订单号:</span> <span>123123123123</span>
-
-								<a class="um-right-items-top-item2" href="#">删除</a> <a
-									class="um-right-items-top-item2" href="#">修改</a>
 							</div>
 							<div class="um-right-items-body">
 								<div class="um-right-items-img">
@@ -133,24 +157,22 @@
 								<div class="um-right-items-intro">
 									<a href="#">这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称</a>
 								</div>
-								<div class="um-right-items-watch">
-									<span>已有</span>
-									<span>300</span>
-									<span>人浏览</span>
-								</div>
 								<div class="um-right-items-money">
-									<span>￥</span>
-									<span>400</span>
+									<span>￥</span> <span>400</span>
 								</div>
+								<div class="um-right-items-num">
+									<span>2</span>
+								</div>
+								<div class="um-right-items-sum">
+									<span>￥</span> <span>200</span>
+								</div>
+								<a class="um-right-items-top-item33" href="#">删除</a>
 							</div>
 						</div>
 						<div class="um-right-items">
 							<div class="um-right-items-top">
 								<span class="um-right-items-top-item">2015-11-11</span> <span
 									class="um-right-items-top-item">订单号:</span> <span>123123123123</span>
-
-								<a class="um-right-items-top-item2" href="#">删除</a> <a
-									class="um-right-items-top-item2" href="#">修改</a>
 							</div>
 							<div class="um-right-items-body">
 								<div class="um-right-items-img">
@@ -160,69 +182,16 @@
 								<div class="um-right-items-intro">
 									<a href="#">这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称</a>
 								</div>
-								<div class="um-right-items-watch">
-									<span>已有</span>
-									<span>300</span>
-									<span>人浏览</span>
-								</div>
 								<div class="um-right-items-money">
-									<span>￥</span>
-									<span>400</span>
+									<span>￥</span> <span>400</span>
 								</div>
-							</div>
-						</div>
-						<div class="um-right-items">
-							<div class="um-right-items-top">
-								<span class="um-right-items-top-item">2015-11-11</span> <span
-									class="um-right-items-top-item">订单号:</span> <span>123123123123</span>
-
-								<a class="um-right-items-top-item2" href="#">删除</a> <a
-									class="um-right-items-top-item2" href="#">修改</a>
-							</div>
-							<div class="um-right-items-body">
-								<div class="um-right-items-img">
-									<img src="goods/lanqiu.jpg"
-										onload='if (this.width>100 || this.height>100) if (this.width/this.height>100/100) this.width=100; else this.height=100;'>
+								<div class="um-right-items-num">
+									<span>2</span>
 								</div>
-								<div class="um-right-items-intro">
-									<a href="#">这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称</a>
+								<div class="um-right-items-sum">
+									<span>￥</span> <span>200</span>
 								</div>
-								<div class="um-right-items-watch">
-									<span>已有</span>
-									<span>300</span>
-									<span>人浏览</span>
-								</div>
-								<div class="um-right-items-money">
-									<span>￥</span>
-									<span>400</span>
-								</div>
-							</div>
-						</div>
-						<div class="um-right-items">
-							<div class="um-right-items-top">
-								<span class="um-right-items-top-item">2015-11-11</span> <span
-									class="um-right-items-top-item">订单号:</span> <span>123123123123</span>
-
-								<a class="um-right-items-top-item2" href="#">删除</a> <a
-									class="um-right-items-top-item2" href="#">修改</a>
-							</div>
-							<div class="um-right-items-body">
-								<div class="um-right-items-img">
-									<img src="goods/lanqiu.jpg"
-										onload='if (this.width>100 || this.height>100) if (this.width/this.height>100/100) this.width=100; else this.height=100;'>
-								</div>
-								<div class="um-right-items-intro">
-									<a href="#">这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称</a>
-								</div>
-								<div class="um-right-items-watch">
-									<span>已有</span>
-									<span>300</span>
-									<span>人浏览</span>
-								</div>
-								<div class="um-right-items-money">
-									<span>￥</span>
-									<span>400</span>
-								</div>
+								<a class="um-right-items-top-item33" href="#">删除</a>
 							</div>
 						</div>
 					</div>
@@ -230,6 +199,6 @@
 			</div>
 		</div>
 	</div>
-	<%@ include file="partofpage/foot.jsp" %>
+	<%@ include file="partofpage/foot.jsp"%>
 </body>
 </html>

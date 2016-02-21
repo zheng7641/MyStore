@@ -12,7 +12,7 @@
 				<span>欢迎来到二手商品网站</span>
 			</div>
 			<div class="right">
-				<a href="#">我的订单</a> <a href="#">卖家中心</a> <a href="#">登录</a> <a
+				<a href="#">购物车</a> <a href="#">卖家中心</a> <a href="#">登录</a> <a
 					href="#">注册</a>
 			</div>
 		</div>

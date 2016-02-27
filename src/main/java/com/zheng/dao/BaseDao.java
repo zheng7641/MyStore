@@ -1,14 +1,19 @@
-package com.zheng.service;
+package com.zheng.dao;
 
 import java.util.List;
 import java.util.Map;
 
-public interface BaseService<T> {
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+@Repository
+@Transactional
+public interface BaseDao<T> {
 
 	/**
 	 * 添加
 	 * 
-	 * @param user
+	 * @param T
 	 * @return
 	 */
 	public int add(T t);
@@ -22,17 +27,9 @@ public interface BaseService<T> {
 	public int delete(Integer id);
 
 	/**
-	 * 删除
+	 * 修改
 	 * 
 	 * @param T
-	 * @return
-	 */
-	public int delete(T t);
-
-	/**
-	 * 修改用户
-	 * 
-	 * @param user
 	 * @return
 	 */
 	public int update(T t);
@@ -40,35 +37,35 @@ public interface BaseService<T> {
 	/**
 	 * 通过ID查询
 	 * 
-	 * @param int
+	 * @param id
 	 * @return
 	 */
 	public T getById(int id);
-	
+
 	/**
-	 * 通过name查询
+	 * 通过名字查询
 	 * 
-	 * @param int
+	 * @param Name
 	 * @return
 	 */
 	public T getByName(String name);
 
 	/**
-	 * 查询一个字段的值
+	 * 通过ID查询字段
 	 * 
-	 * @param int
+	 * @param Name
 	 * @return
 	 */
 	public List<String> getStringById(int id);
 	
 	/**
-	 * 查询一个字段的值
+	 * 通过字段查询字段
 	 * 
-	 * @param String
+	 * @param Name
 	 * @return
 	 */
 	public List<String> getStringByString(String name);
-
+	
 	/**
 	 * 查询集合
 	 * 
@@ -78,18 +75,10 @@ public interface BaseService<T> {
 	public List<T> get(Map<String, Object> map);
 
 	/**
-	 * 查询所有
-	 * 
-	 * @param
-	 * @return
-	 */
-	public List<T> getAll();
-
-	/**
 	 * 获取总记录数
 	 * 
 	 * @param map
 	 * @return
 	 */
-	public Long getTotal(T t);
+	public Long getTotal(Map<String, Object> map);
 }

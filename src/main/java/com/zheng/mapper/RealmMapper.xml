@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zheng.dao.RealmDao">
+
+
+	<select id="getRoleByUserName" parameterType="String" resultType="String">
+		select rolename 
+		from user u,role r
+		where u.roleid=r.roleid
+		and u.username=#{userName}
+	</select>	
+	
+</mapper> 

@@ -16,9 +16,8 @@ public class UserServiceImpl implements UserService {
 	@Resource
 	private UserDao userDao;
 
-	public int add(User t) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int add(User user) {
+		return userDao.add(user);
 	}
 
 	public int delete(Integer id) {

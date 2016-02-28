@@ -22,22 +22,22 @@ public class UserController {
 	
 
 	@RequestMapping("/login")
+	
 	public String login(@RequestParam("userName") String userName, @RequestParam("password") String password) {
 		Subject subject = SecurityUtils.getSubject();
 		UsernamePasswordToken token = new UsernamePasswordToken(userName, password);
 		try{
 			subject.login(token);
-			return "redircet:/index";
+			return "redirect:/index.jsp";
 		}catch(Exception e){
 			e.printStackTrace();
 			return "error";
 		}
 	}
 	
-	@RequestMapping("/test")
-	public String test(@RequestParam("userName") String userName) {
-		User user = userServiceImpl.getUserAndRoleByUserName(userName);
-		System.out.println(user);
+	@RequestMapping("/register")
+	public String register(@RequestParam("userName") String userName,@RequestParam("password")String password,@RequestParam("password2") String password2,@RequestParam("eMail") String eMail) {
+		userServiceImpl.add(new User("userName","password"));
 		return "redircet:/index";
 	}
 

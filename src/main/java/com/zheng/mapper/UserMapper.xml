@@ -12,7 +12,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<resultMap type="User" id="userRoleMap" extends="UserMap">
 		<collection property="role" ofType="Role">
 			<id property="roleId" column="roleId" />
-			<result property="roleName" column="roleName"/>
+			<result property="roleName" column="roleName" />
 		</collection>
 	</resultMap>
 
@@ -26,10 +26,16 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		select
 		u.userid as userId,
 		u.username as userName,
-		u.password as password,
+		u.password
+		as password,
 		r.roleid as roleId,
 		r.rolename as roleName
-		from user u,user_role,role r
+		from user
+		u,user_role,role r
 		where userName=#{userName}
 	</select>
+
+	<insert id="add" parameterType="User" flushCache="true" timeout="20">
+		insert into user(userName,password) values(#{userName},#{password})
+	</insert>
 </mapper> 

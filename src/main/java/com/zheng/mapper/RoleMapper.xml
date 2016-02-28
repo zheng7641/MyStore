@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zheng.dao.RoleDao">
+
+	<resultMap type="Role" id="roleResult">
+		<id property="roleId" column="roleId" />
+		<result property="roleName" column="roleName" />
+	</resultMap>
+
+	<resultMap type="Role" id="roleUserResult" extends="roleResult">
+		<collection property="user" ofType="User">
+			<id property="userId" column="userId" />
+			<result property="userName" column="userName" />
+			<result property="password" column="password" />
+		</collection>
+	</resultMap>
+
+	<select id="getRoleByUserName" parameterType="String"
+		resultType="String">
+		select r.rolename
+		from user u,user_role ur,role r
+		where u.username='aaa'
+		and u.userid = ur.userid
+		and ur.roleid = r.roleid
+	</select>
+
+</mapper> 

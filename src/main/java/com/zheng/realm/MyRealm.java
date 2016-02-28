@@ -1,5 +1,9 @@
 package com.zheng.realm;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.apache.shiro.authc.AuthenticationException;
@@ -13,7 +17,7 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.stereotype.Component;
 
 import com.zheng.entity.User;
-import com.zheng.service.impl.RealmServiceImpl;
+import com.zheng.service.impl.RoleServiceImpl;
 import com.zheng.service.impl.UserServiceImpl;
 /*
  * 在Shiro中，最终是通过Realm来获取应用程序中的用户、角色及权限信息的。
@@ -25,7 +29,7 @@ import com.zheng.service.impl.UserServiceImpl;
 public class MyRealm extends AuthorizingRealm {
 
 	@Resource
-	private RealmServiceImpl realmServiceImpl;
+	private RoleServiceImpl roleServiceImpl;
 	@Resource
 	private UserServiceImpl userServiceImpl;
 
@@ -40,7 +44,10 @@ public class MyRealm extends AuthorizingRealm {
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
 		String userName = (String) principals.getPrimaryPrincipal();
 		SimpleAuthorizationInfo authorizationInfo = new SimpleAuthorizationInfo();
-		authorizationInfo.setRoles(realmServiceImpl.getRoleByUserName(userName));
+		List<String> roleList = roleServiceImpl.getRoleByUserName(userName);
+		for(String role:roleList){
+			authorizationInfo.addRole(role);
+		}
 		return authorizationInfo;
 	}
 
@@ -54,7 +61,7 @@ public class MyRealm extends AuthorizingRealm {
 	@Override
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
 		String userName = (String) token.getPrincipal();
-		User user = userServiceImpl.getByName(userName);
+		User user = userServiceImpl.getUserAndRoleByUserName(userName);
 		System.out.println(user);
 		if (user != null) {
 			AuthenticationInfo authcInfo = new SimpleAuthenticationInfo(user.getUserName(), user.getPassword(), "salt");

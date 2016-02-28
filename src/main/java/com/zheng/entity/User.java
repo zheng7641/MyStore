@@ -17,6 +17,12 @@ public class User {
 		super();
 	}
 
+	public User(String userName, String password) {
+		super();
+		this.userName = userName;
+		this.password = password;
+	}
+
 	public User(int userId, String userName, String password, List<Role> role) {
 		super();
 		this.userId = userId;

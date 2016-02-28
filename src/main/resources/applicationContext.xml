@@ -62,6 +62,8 @@
 		<!-- Shiro连接约束配置,即过滤链的定义 -->
 		<property name="filterChainDefinitions">
 			<value>
+				/index.jsp=roles[admin]
+
 				/login=anon
 				/admin*=authc
 				/student=roles[teacher]

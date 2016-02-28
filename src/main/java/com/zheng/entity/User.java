@@ -1,30 +1,36 @@
 package com.zheng.entity;
 
+import java.util.List;
+import java.util.Set;
+
+import org.springframework.stereotype.Component;
+
+@Component
 public class User {
 
-	private int id;
+	private int userId;
 	private String userName;
 	private String password;
-	private String role;
+	private List<Role> role;
 
 	public User() {
 		super();
 	}
 
-	public User(int id, String userName, String password, String role) {
+	public User(int userId, String userName, String password, List<Role> role) {
 		super();
-		this.id = id;
+		this.userId = userId;
 		this.userName = userName;
 		this.password = password;
 		this.role = role;
 	}
 
-	public int getId() {
-		return id;
+	public int getUserId() {
+		return userId;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
 	public String getUserName() {
@@ -43,17 +49,17 @@ public class User {
 		this.password = password;
 	}
 
-	public String getRole() {
+	public List<Role> getRole() {
 		return role;
 	}
 
-	public void setRole(String role) {
+	public void setRole(List<Role> role) {
 		this.role = role;
 	}
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", userName=" + userName + ", password=" + password + ", role=" + role + "]";
+		return "User [userId=" + userId + ", userName=" + userName + ", password=" + password + ", role=" + role + "]";
 	}
 
 }

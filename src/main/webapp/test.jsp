@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-${user1.userName }${user1.password }
+<a href="http://localhost:8080/MyStore/user/test.do?userName=aaa">a</a>
 </body>
 </html>

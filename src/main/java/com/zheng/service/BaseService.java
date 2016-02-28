@@ -2,7 +2,9 @@ package com.zheng.service;
 
 import java.util.List;
 import java.util.Map;
+import org.springframework.stereotype.Component;
 
+@Component
 public interface BaseService<T> {
 
 	/**

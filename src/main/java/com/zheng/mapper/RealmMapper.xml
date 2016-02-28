@@ -4,12 +4,32 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zheng.dao.RealmDao">
 
+	<resultMap type="User" id="UserResult">
+		<id property="id" column="id"/>
+		<result property="userName" column="userName"/>
+		<result property="password" column="password"/>
+		<collection property="roles">
+			<id property="roleId" column="roleId"/>
+		</collection>
+	</resultMap>
 
-	<select id="getRoleByUserName" parameterType="String" resultType="String">
-		select rolename 
-		from user u,role r
-		where u.roleid=r.roleid
-		and u.username=#{userName}
-	</select>	
+	<select id="getRoleByUserName" parameterType="String"
+		resultType="Map">
+		select roleName
+		from role
+		where roleId in(
+			select roleId
+			from user_role
+			where userId in(
+				select userId
+				from user
+				where userName = #{userName}))
+	</select>
 	
+	<select id="getByUserName" parameterType="String" resultMap="UserResult">
+		select u.userid,u.userName,u.password,r.roleName
+		from user u,user_role,role r
+		where userName=#{userName}
+	</select>
+
 </mapper> 

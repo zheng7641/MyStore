@@ -8,7 +8,9 @@ import javax.annotation.Resource;
 import com.zheng.dao.UserDao;
 import com.zheng.entity.User;
 import com.zheng.service.UserService;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserServiceImpl implements UserService {
 
 	@Resource
@@ -66,6 +68,10 @@ public class UserServiceImpl implements UserService {
 	public Long getTotal(User t) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	public User getUserAndRoleByUserName(String userName) {
+		return userDao.getUserAndRoleByUserName(userName);
 	}
 
 }

@@ -3,20 +3,33 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zheng.dao.UserDao">
-
-	<resultMap type="User" id="UserResult">
-		<result property="id" column="id"/>
-		<result property="userName" column="userName"/>
-		<result property="password" column="password"/>
-		<result property="role" column="role"/>
+	<resultMap type="User" id="UserMap">
+		<id property="userId" column="userId" />
+		<result property="userName" column="userName" />
+		<result property="password" column="password" />
 	</resultMap>
 
-	<!-- <select id="login" parameterType="User" resultMap="UserResult"> select 
-		* from user where userName=#{userName} and password=#{password} </select> 
-		<select id="getByUserName" parameterType="String" resultMap="UserResult"> 
-		select * from user where userName=#{userName} </select> -->
-	
-	<select id="getByName" parameterType="String" resultType="user">
-		select * from user where userName=#{userName}
+	<resultMap type="User" id="userRoleMap" extends="UserMap">
+		<collection property="role" ofType="Role">
+			<id property="roleId" column="roleId" />
+			<result property="roleName" column="roleName"/>
+		</collection>
+	</resultMap>
+
+	<select id="getByName" parameterType="String" resultMap="UserMap">
+		select *
+		from user where userName=#{userName}
+	</select>
+
+	<select id="getUserAndRoleByUserName" parameterType="String"
+		resultMap="userRoleMap">
+		select
+		u.userid as userId,
+		u.username as userName,
+		u.password as password,
+		r.roleid as roleId,
+		r.rolename as roleName
+		from user u,user_role,role r
+		where userName=#{userName}
 	</select>
 </mapper> 

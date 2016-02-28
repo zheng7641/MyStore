@@ -3,11 +3,9 @@ package com.zheng.dao;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
+import org.springframework.stereotype.Component;
 
-@Repository
-@Transactional
+@Component
 public interface BaseDao<T> {
 
 	/**

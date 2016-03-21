@@ -13,7 +13,7 @@ public interface BaseService<T> {
 	 * @param user
 	 * @return
 	 */
-	public int add(T t);
+	public void add(T t);
 
 	/**
 	 * É¾³ý

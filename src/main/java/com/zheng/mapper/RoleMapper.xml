@@ -21,9 +21,15 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		resultType="String">
 		select r.rolename
 		from user u,user_role ur,role r
-		where u.username='aaa'
+		where
+		u.username='aaa'
 		and u.userid = ur.userid
 		and ur.roleid = r.roleid
 	</select>
+
+	<insert id="addRole">
+		insert into user_role(userId,roleId)
+		values(#{userId},#{roleId})
+	</insert>
 
 </mapper> 

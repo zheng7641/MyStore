@@ -9,4 +9,5 @@ public interface RoleDao{
 
 	public List<String> getRoleByUserName(String userName);
 	
+	public void addRole(int userId,int roleId);
 }

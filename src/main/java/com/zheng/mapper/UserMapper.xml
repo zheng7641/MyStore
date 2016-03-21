@@ -35,7 +35,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		where userName=#{userName}
 	</select>
 
+	<select id="getUserIdByName" parameterType="String" resultType="Integer">
+		select userId from user where userName=#{userName)
+	</select>
+
 	<insert id="add" parameterType="User" flushCache="true" timeout="20">
 		insert into user(userName,password) values(#{userName},#{password})
 	</insert>
+	
 </mapper> 

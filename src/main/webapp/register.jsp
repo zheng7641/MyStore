@@ -14,11 +14,11 @@
 			<h3>用户注册</h3>
 		</div>
 		<div class="nc-login-content">
-			<form id="register_form" method="post" action="#">
+			<form id="register_form" method="post" action="user/register.do">
 				<dl>
 					<dt>用户名</dt>
 					<dd style="min-height:54px;">
-					<input type="text" id="user_name" name="user_name" class="text tip" title="3-20位字符，可由中文、英文、数字及“_”、“-”组成" />
+					<input type="text" id="userName" name="userName" class="text tip" title="3-20位字符，可由中文、英文、数字及“_”、“-”组成" />
 					<label></label></dd>
 				</dl>
 				<dl>
@@ -30,13 +30,13 @@
 				<dl>
 					<dt>确认密码</dt>
 					<dd style="min-height:54px;">
-					<input type="password" id="password_confirm" name="password_confirm" class="text tip" title="请再次输入您的密码" />
+					<input type="password" id="password2" name="password2" class="text tip" title="请再次输入您的密码" />
 					<label></label></dd>
 				</dl>
 				<dl>
 					<dt>邮箱</dt>
 					<dd style="min-height:54px;">
-					<input type="text" id="email" name="email" class="text tip" title="请输入常用的邮箱，将用来找回密码、接受订单通知等" />
+					<input type="text" id="eMail" name="eMail" class="text tip" title="请输入常用的邮箱，将用来找回密码、接受订单通知等" />
 					<label></label></dd>
 				</dl>
 

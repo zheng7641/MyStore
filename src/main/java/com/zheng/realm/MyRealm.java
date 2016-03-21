@@ -64,11 +64,10 @@ public class MyRealm extends AuthorizingRealm {
 		User user = userServiceImpl.getUserAndRoleByUserName(userName);
 		System.out.println(user);
 		if (user != null) {
-			AuthenticationInfo authcInfo = new SimpleAuthenticationInfo(user.getUserName(), user.getPassword(), "salt");
+			AuthenticationInfo authcInfo = new SimpleAuthenticationInfo(user.getUserName(), user.getPassword(), "cnmgpjwmz");
 			return authcInfo;
 		} else {
 			return null;
 		}
 	}
-
 }

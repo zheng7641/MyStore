@@ -5,19 +5,30 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
+import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.zheng.dao.RoleDao;
 import com.zheng.dao.UserDao;
 import com.zheng.entity.User;
 import com.zheng.service.UserService;
-import org.springframework.stereotype.Component;
 
 @Component
 public class UserServiceImpl implements UserService {
 
+	private static final int ADMIN = 1;
+	private static final int YOUKE = 2;
+	
 	@Resource
 	private UserDao userDao;
-
-	public int add(User user) {
-		return userDao.add(user);
+	
+	@Resource
+	private RoleDao roleDao;
+	
+	public void add(User user) {
+		userDao.add(user);
+		int userId = userDao.getUserIdByName(user.getUserName());
+		roleDao.addRole(userId, YOUKE);
 	}
 
 	public int delete(Integer id) {

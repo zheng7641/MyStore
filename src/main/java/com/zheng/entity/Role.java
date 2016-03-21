@@ -14,7 +14,12 @@ public class Role {
 	public Role() {
 		super();
 	}
-
+	
+	public Role(String roleName){
+		super();
+		this.roleName = roleName;
+	}
+	
 	public Role(int roleId, String roleName, List<User> user) {
 		super();
 		this.roleId = roleId;

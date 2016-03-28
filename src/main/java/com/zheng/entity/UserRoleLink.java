@@ -1,5 +1,8 @@
 package com.zheng.entity;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class UserRoleLink {
 
 	private User user;

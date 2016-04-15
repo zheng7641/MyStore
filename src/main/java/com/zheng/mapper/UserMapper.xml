@@ -7,40 +7,82 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<id property="userId" column="userId" />
 		<result property="userName" column="userName" />
 		<result property="password" column="password" />
+		<result property="nickName" column="nickName" />
+		<result property="sex" column="sex" />
+		<result property="phone" column="phone" />
+		<result property="location" column="location" />
 	</resultMap>
 
 	<resultMap type="User" id="userRoleMap" extends="UserMap">
-		<collection property="role" ofType="Role">
+		<collection property="roleList" ofType="Role" column="userId">
 			<id property="roleId" column="roleId" />
 			<result property="roleName" column="roleName" />
 		</collection>
 	</resultMap>
 
-	<select id="getByName" parameterType="String" resultMap="UserMap">
-		select *
-		from user where userName=#{userName}
-	</select>
+	<insert id="add" parameterType="User">
+		insert into
+		user(userName,password,nickName,sex,phone,location)
+		values(#{userName},#{password},#{nickName},#{sex},#{phone},#{location})
+	</insert>
 
-	<select id="getUserAndRoleByUserName" parameterType="String"
-		resultMap="userRoleMap">
-		select
-		u.userid as userId,
-		u.username as userName,
-		u.password
-		as password,
-		r.roleid as roleId,
-		r.rolename as roleName
-		from user
-		u,user_role,role r
+	<delete id="delete" parameterType="String">
+		delete from user where userName = #{userName}
+	</delete>
+
+	<delete id="deleteRole" parameterType="String">
+		delete
+		from user_role
+		where userid in(
+			select userid
+			from user
+			where username = #{userName}
+		)
+	</delete>
+
+	<update id="update" parameterType="User">
+		update user
+		set password = #{password},
+		nickName=#{nickName},
+		sex=#{sex},
+		phone=#{phone},
+		location=#{location}
+		where userName = #{userName}
+	</update>
+
+	<select id="get" parameterType="String" resultMap="UserMap">
+		select *
+		from
+		user
 		where userName=#{userName}
 	</select>
 
-	<select id="getUserIdByName" parameterType="String" resultType="Integer">
-		select userId from user where userName=#{userName)
+	<select id="getUserAndRole" parameterType="String" resultMap="userRoleMap">
+		select
+		u.userid,
+		u.username,
+		u.password,
+		u.nickname,
+		u.sex,u.phone,
+		u.location,
+		r.roleid,r.rolename
+		from user u,user_role ur,role r
+		where
+		u.userid = ur.userid
+		and ur.roleid = r.roleid
+		and u.userName=#{userName}
 	</select>
 
-	<insert id="add" parameterType="User" flushCache="true" timeout="20">
-		insert into user(userName,password) values(#{userName},#{password})
-	</insert>
+	<select id="getId" parameterType="String" resultType="Integer">
+		select
+		userId
+		from user
+		where userName=#{userName}
+	</select>
 	
+	<select id="isExist" parameterType="String" resultType="Integer">
+		select count(*)
+		from user
+		where userName = #{userName}
+	</select>
 </mapper> 

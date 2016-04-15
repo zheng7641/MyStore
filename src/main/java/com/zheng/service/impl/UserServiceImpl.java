@@ -26,7 +26,7 @@ public class UserServiceImpl implements UserService {
 	
 	public void add(User user) {
 		userDao.add(user);
-		int userId = userDao.getUserIdByName(user.getUserName());
+		int userId = userDao.getId(user.getUserName());
 		roleDao.addRole(userId, YOUKE);
 	}
 
@@ -51,7 +51,8 @@ public class UserServiceImpl implements UserService {
 	}
 
 	public User getByName(String name) {
-		return userDao.getByName(name);
+		//return userDao.getByName(name);
+		return null;
 	}
 
 	public List<String> getStringById(int id) {
@@ -80,7 +81,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 	public User getUserAndRoleByUserName(String userName) {
-		return userDao.getUserAndRoleByUserName(userName);
+		return userDao.getUserAndRole(userName);
 	}
 
 }

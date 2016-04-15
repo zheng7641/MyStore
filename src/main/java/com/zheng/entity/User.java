@@ -15,23 +15,14 @@ public class User {
 	private String sex;
 	private String phone;
 	private String location;
-	
+
 	private List<Role> roleList;
 	private List<GoodsMessage> goodsMessageList;
 	private List<Goods> goodsList;
-	
+
 	public User() {
 		super();
 	}
-	
-	
-	public User(String userName, String password) {
-		super();
-		this.userName = userName;
-		this.password = password;
-	}
-
-
 
 	public User(String userName, String password, String nickName, String sex, String phone, String location) {
 		super();
@@ -42,8 +33,6 @@ public class User {
 		this.phone = phone;
 		this.location = location;
 	}
-
-
 
 	public User(String userName, String password, String nickName, String sex, String phone, String location,
 			List<Role> roleList, List<GoodsMessage> goodsMessageList, List<Goods> goodsList) {
@@ -58,6 +47,7 @@ public class User {
 		this.goodsMessageList = goodsMessageList;
 		this.goodsList = goodsList;
 	}
+
 	public User(int userId, String userName, String password, String nickName, String sex, String phone,
 			String location, List<Role> roleList, List<GoodsMessage> goodsMessageList, List<Goods> goodsList) {
 		super();
@@ -72,66 +62,87 @@ public class User {
 		this.goodsMessageList = goodsMessageList;
 		this.goodsList = goodsList;
 	}
+
 	public int getUserId() {
 		return userId;
 	}
+
 	public void setUserId(int userId) {
 		this.userId = userId;
 	}
+
 	public String getUserName() {
 		return userName;
 	}
+
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
+
 	public String getPassword() {
 		return password;
 	}
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
 	public String getNickName() {
 		return nickName;
 	}
+
 	public void setNickName(String nickName) {
 		this.nickName = nickName;
 	}
+
 	public String getSex() {
 		return sex;
 	}
+
 	public void setSex(String sex) {
 		this.sex = sex;
 	}
+
 	public String getPhone() {
 		return phone;
 	}
+
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
+
 	public String getLocation() {
 		return location;
 	}
+
 	public void setLocation(String location) {
 		this.location = location;
 	}
+
 	public List<Role> getRoleList() {
 		return roleList;
 	}
+
 	public void setRoleList(List<Role> roleList) {
 		this.roleList = roleList;
 	}
+
 	public List<GoodsMessage> getGoodsMessageList() {
 		return goodsMessageList;
 	}
+
 	public void setGoodsMessageList(List<GoodsMessage> goodsMessageList) {
 		this.goodsMessageList = goodsMessageList;
 	}
+
 	public List<Goods> getGoodsList() {
 		return goodsList;
 	}
+
 	public void setGoodsList(List<Goods> goodsList) {
 		this.goodsList = goodsList;
 	}
+
 	@Override
 	public String toString() {
 		return "User [userId=" + userId + ", userName=" + userName + ", password=" + password + ", nickName=" + nickName

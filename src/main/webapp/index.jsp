@@ -154,7 +154,7 @@
 					</div>
 					<div class="nc">
 						<ul>
-							<li><a href="#">【通知】通知的标题</a></li>
+							<li><a href="#">【通知】${noticeList.get(0).noticeTitle }</a></li>
 							<li><a href="#">【通知】通知的标题</a></li>
 							<li><a href="#">【通知】通知的标题</a></li>
 							<li><a href="#">【通知】通知的标题</a></li>

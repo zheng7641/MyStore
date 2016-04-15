@@ -25,6 +25,13 @@ public interface BaseDao<T> {
 	public int delete(Integer id);
 
 	/**
+	 * É¾³ý£¬Í¨¹ý×Ö¶Î
+	 * @param name
+	 * @return int
+	 */
+	public int deleteByName(String name);
+	
+	/**
 	 * ÐÞ¸Ä
 	 * 
 	 * @param T
@@ -78,5 +85,5 @@ public interface BaseDao<T> {
 	 * @param map
 	 * @return
 	 */
-	public Long getTotal(Map<String, Object> map);
+	public Long getTotal();
 }

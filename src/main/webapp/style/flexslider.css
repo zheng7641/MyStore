@@ -98,6 +98,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flexslider .slides img {
+	margin-left:100px;
 	height: 500px;
 	-moz-user-select: none;
 }
@@ -145,7 +146,6 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav a:before {
-	font-family: "flexslider-icon";
 	font-size: 40px;
 	display: inline-block;
 	content: '\f001';

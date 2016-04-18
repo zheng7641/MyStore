@@ -15,4 +15,11 @@ public interface GoodsService {
 	public List<Goods> getNewGoods();
 	
 	public List<Goods> getLoveGoods();
+	
+	public int getPageNum(String typeName);
+	
+	public Goods getById(int id);
+	
+	public List<Goods> getBySeller(int goodsId);
+	
 }

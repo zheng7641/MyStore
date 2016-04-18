@@ -74,11 +74,18 @@ public interface GoodsDao {
 	public List<Goods> getByName(String name);
 	
 	/**
-	 * 通过卖家姓名查找商品
+	 * 通过卖家id查找商品
 	 * @param name
 	 * @return List<Goods>
 	 */
-	public List<Goods> getBySeller(String name);
+	public List<Goods> getBySeller(int userId);
+	
+	/**
+	 * 通过商品id查找卖家id
+	 * @param goodsId
+	 * @return
+	 */
+	public int getUserId(int goodsId);
 	
 	/**
 	 * 通过商品类型查找商品
@@ -133,5 +140,5 @@ public interface GoodsDao {
 	 * @param map
 	 * @return
 	 */
-	public Long getTotal();
+	public int getTotal(String typeName);
 }

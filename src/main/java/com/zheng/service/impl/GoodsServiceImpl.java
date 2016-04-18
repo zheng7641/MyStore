@@ -75,4 +75,33 @@ public class GoodsServiceImpl implements GoodsService{
 		}
 		return goodsList;
 	}
+	
+	/**
+	 * 返回总页数
+	 */
+	public int getPageNum(String typeName){
+		return goodsDao.getTotal(typeName)/16+1;
+	}
+	
+	/**
+	 * 获取商品
+	 */
+	public Goods getById(int id){
+		Goods goods = goodsDao.getById(id);
+		goods.setImagesList(imagesDao.getByGoodsId(id));
+		return goods;
+	}
+	
+	/**
+	 * 获取用户其他商品
+	 */
+	public List<Goods> getBySeller(int goodsId){
+		int userId = goodsDao.getUserId(goodsId);
+		List<Goods> goodsList = goodsDao.getBySeller(userId);
+		for(Goods g:goodsList){
+			g.setImagesList(imagesDao.getByGoodsId(g.getGoodsId()));
+		}
+		return goodsList;
+	}
+	
 }

@@ -19,6 +19,7 @@ public class Goods {
 	private String contactInformation;
 	private String businessDeal; // 交易方式
 	private Date createTime;
+	private int userId;
 
 	private Type type;
 	private List<GoodsMessage> goodsMessage;
@@ -170,14 +171,21 @@ public class Goods {
 		this.imagesList = imagesList;
 	}
 
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+
 	@Override
 	public String toString() {
 		return "Goods [goodsId=" + goodsId + ", goodsName=" + goodsName + ", goodsDescription=" + goodsDescription
 				+ ", price=" + price + ", quality=" + quality + ", tradingPosition=" + tradingPosition
 				+ ", contactInformation=" + contactInformation + ", businessDeal=" + businessDeal + ", createTime="
-				+ createTime + ", type=" + type + ", goodsMessage=" + goodsMessage + ", userList=" + userList
-				+ ", imagesList=" + imagesList + "]";
+				+ createTime + ", userId=" + userId + ", type=" + type + ", goodsMessage=" + goodsMessage
+				+ ", userList=" + userList + ", imagesList=" + imagesList + "]";
 	}
-
 
 }

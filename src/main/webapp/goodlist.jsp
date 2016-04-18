@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"  import="java.util.*"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -8,6 +8,8 @@
 <title>二货 - 嘉人的二手市场</title>
 <link href="style/css.css" rel="stylesheet" type="text/css" />
 <link href="style/goodlist.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.page.js"></script>
 </head>
 <body>
 	<!-- 头部标题栏和搜索框和导航标题 -->
@@ -87,24 +89,23 @@
 					</ul>
 				</div>
 				<div class="bottompage">
-					<div class="jogger">
-						<span class="disabled">&lt; </span> 
-						<span class="current">1</span>
-						<a href="#?page=2">2</a> 
-						<a href="#?page=3">3</a> 
-						<a href="#?page=4">4</a> 
-						<a href="#?page=5">5</a> 
-						<a href="#?page=6">6</a>
-						<a href="#?page=7">7</a>
-						... 
-						<a href="#?page=199">199</a> 
-						<a href="#?page=200">200</a> 
-						<a href="#?page=2"> &gt; </a>
-					</div>
+					 <div class="tcdPageCode">
+   					 </div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<script>
+	$(document).ready(function(){
+	    $(".tcdPageCode").createPage({
+	        pageCount:${pageNum },
+	        current:${page },
+	        backFn:function(p){
+	        	window.location.href="http://localhost:8080/MyStore/list.do?type=${type}&page="+p;
+	        }
+	    })
+	});
+</script>
 	<%@ include file="partofpage/foot.jsp"%>
 </body>
 </html>

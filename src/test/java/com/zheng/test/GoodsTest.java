@@ -58,4 +58,30 @@ public class GoodsTest {
 			goodsDao.add("篮球"+i, "商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介"+i, Integer.valueOf(10*i), "质量"+i, "交易地点"+i,String.valueOf(i*1342),"交易方式"+i, new Date(), 225);
 		}
 	}
+	
+	@Test
+	public void getTotal(){
+		int i = goodsDao.getTotal("篮球");
+		System.out.println(i/16);
+	}
+	
+	@Test
+	public void getById(){
+		Goods goods = goodsDao.getById(1);
+		System.out.println(goods);
+	}
+	
+	@Test
+	public void getBySeller(){
+		List<Goods> goodsList = goodsDao.getBySeller(1);
+		for(Goods g:goodsList){
+			System.out.println(g);
+		}
+	}
+	
+	@Test
+	public void getUserId(){
+		int i = goodsDao.getUserId(1);
+		System.out.println(i);
+	}
 }

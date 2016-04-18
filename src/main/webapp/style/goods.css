@@ -73,6 +73,7 @@
 
 .goods_left_intro {
 	float: left;
+	padding-left:30px;
 	width: 730px;
 	overflow: hidden;
 }
@@ -125,18 +126,21 @@
 }
 
 .glid_img img {
+	min-height:600px;
 	margin: 5px auto;
 }
 
 .goods_right_othergoods {
-	margin-top: 70px; float : right;
+	margin-top: 70px; 
+	margin-left: 20px;
 	min-height: 300px;
-	width: 450px;
+	width: 400px;
 	border: 1px solid #d7d7d7;
-	float: right;
+	float: left;
 }
 
 .gro_sub {
+	padding-left:20px;
 	display:block;	
 	height : 60px;
 	overflow: hidden;
@@ -153,7 +157,7 @@
 }
 
 .gro_sub_2{
-	margin-left:90px;
+	margin-left:80px;
 	height:60px;
 }
 

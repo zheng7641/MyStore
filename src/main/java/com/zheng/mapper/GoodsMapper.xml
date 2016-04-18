@@ -13,6 +13,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<result property="contactInformation" column="contactInformation"/>
 		<result property="businessDeal" column="businessDeal"/>
 		<result property="createTime" column="createTime"/>
+		<result property="userId" column="userId"/>
 	</resultMap>
 	
 	<resultMap type="Goods" id="GoodsImgMessage" extends="GoodsMap">
@@ -78,4 +79,31 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		where  a.goodsid limit #{first},#{number}
 	</select>
 	
+	<select id="getTotal" resultType="Integer">
+		select count(*) 
+		from goods 
+		where typeId in (
+			select typeId
+			from type
+			where typeName like CONCAT('%',#{typeName},'%')   
+		)
+	</select>
+	
+	<select id="getById" resultMap="GoodsMap">
+		select * 
+		from goods
+		where goodsId = #{id}
+	</select>
+	
+	<select id="getBySeller" resultMap="GoodsMap">
+		select *
+		from goods
+		where userId = #{userId}
+	</select>
+	
+	<select id="getUserId" resultType="Integer">
+		select userId
+		from goods
+		where goodsId = #{goodsId}
+	</select>
 </mapper>

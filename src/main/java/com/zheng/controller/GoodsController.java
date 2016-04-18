@@ -43,7 +43,7 @@ public class GoodsController {
 	 * @throws IOException 
 	 * @throws ServletException 
 	 */
-	@RequestMapping("good")
+	@RequestMapping("getGood")
 	public void getGood(@RequestParam(value="goodId",required=false) String goodId,HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException{
 		request.setAttribute("good", null);
 		request.getRequestDispatcher("/goods.jsp").forward(request, response);

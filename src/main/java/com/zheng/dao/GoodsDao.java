@@ -1,19 +1,28 @@
 package com.zheng.dao;
 
+import java.util.Date;
 import java.util.List;
 
+import org.apache.ibatis.annotations.Param;
+
 import com.zheng.entity.Goods;
-import com.zheng.entity.Type;
 
 public interface GoodsDao {
 
+	
 	/**
 	 * 添加商品
-	 * 
-	 * @param goods
-	 * @return int
+	 * @param goodsName
+	 * @param goodsDescription
+	 * @param price
+	 * @param quality
+	 * @param tradingPosition
+	 * @param contactInformation
+	 * @param businessDeal
+	 * @param timestamp
+	 * @return
 	 */
-	public int add(Goods goods);
+	public int add(@Param("goodsName")String goodsName,@Param("goodsDescription")String goodsDescription,@Param("price")int price,@Param("quality")String quality,@Param("tradingPosition")String tradingPosition,@Param("contactInformation")String contactInformation,@Param("businessDeal")String businessDeal,@Param("CreateTime")Date createTime,@Param("typeId")int typeId);
 	
 	/**
 	 * 删除
@@ -47,6 +56,16 @@ public interface GoodsDao {
 	public Goods getById(int id);
 	
 	/**
+	 * 获取新品 按时间排序
+	 * @param first
+	 * @param number
+	 * @return
+	 */
+	public List<Goods> getNewGoods(@Param("first")int first,@Param("number")int number);
+	
+	public List<Goods> getGoodsImgMsg(@Param("typeName")String typeName,@Param("first")int first,@Param("number")int number);
+	
+	/**
 	 * 通过名字查询
 	 * 
 	 * @param Name
@@ -66,7 +85,16 @@ public interface GoodsDao {
 	 * @param type
 	 * @return
 	 */
-	public List<Goods> getByType(Type type);
+	public List<Goods> getByType(@Param("typeName")String typeName,@Param("first")int first,@Param("number")int number);
+	
+	/**
+	 * 通过类型分页查找数据
+	 * @param typeName
+	 * @param begin
+	 * @param number
+	 * @return
+	 */
+	public List<Goods> getSpecialGoods(@Param("typeName")String typeName,@Param("first")int first,@Param("number")int number);
 	
 	/**
 	 * 分页查询商品

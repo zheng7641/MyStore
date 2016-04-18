@@ -8,5 +8,5 @@ public interface NoticeService {
 
 	public List<Notice> getIndexNotice();
 	
-	public Notice getOneNotice(int id);
+	public Notice getOneNotice(int noticeId);
 }

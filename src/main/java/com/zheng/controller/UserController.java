@@ -27,7 +27,7 @@ public class UserController {
 		UsernamePasswordToken token = new UsernamePasswordToken(userName, password);
 		try{
 			subject.login(token);
-			return "redirect:/notice/getNotice.do";
+			return "redirect:/index.do";
 		}catch(Exception e){
 			e.printStackTrace();
 			return "error";

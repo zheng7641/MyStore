@@ -14,10 +14,10 @@
 	<div id="content_wapper">
 		<div class="content">
 			<div class="noticetitle">
-				<h1>标题</h1>
+				<h1>${notice.noticeTitle }</h1>
 			</div>
 			<div class="noticecontent">
-				neirongneirongneirongneirongneirongneineirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongneirongrongs
+				${notice.content }
 			</div>
 		</div>
 	</div>

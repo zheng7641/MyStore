@@ -3,5 +3,18 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zheng.dao.ImagesDao">
+	<resultMap type="Images" id="ImagesMap">
+		<id property="imagesId" column="imagesId"/>
+		<result property="imagesUrl" column="imagesUrl"/>
+	</resultMap>
 
+	<select id="getByGoodsId" resultMap="ImagesMap">
+		select * from images where goodsId = #{goodsId}
+	</select>
+	
+	<insert id="setImages">
+		insert into images(imagesUrl,goodsId) values(#{imagesUrl},#{goodsId})
+	</insert>
+	
+	
 </mapper>

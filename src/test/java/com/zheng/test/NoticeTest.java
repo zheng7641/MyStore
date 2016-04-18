@@ -28,4 +28,10 @@ public class NoticeTest {
 			System.out.println(n);
 		}
 	}
+	
+	@Test
+	public void getOneNotice(){
+		Notice notice = noticeDao.getOneNotice(1);
+		System.out.println(notice);
+	}
 }

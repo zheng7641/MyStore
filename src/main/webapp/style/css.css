@@ -221,9 +221,9 @@ a:hover, a:active {
 .subitems_dt {
 	position: relative;
 	float: left;
-	width: 54px;
-	padding: 10px 10px 0 0;
-	text-align: right;
+	width: 64px;
+	padding: 10px 0px 0 0;
+	text-align: left;
 	font-weight: 700;
 }
 
@@ -506,18 +506,20 @@ a:hover, a:active {
 }
 
 .content_tiantian_right_title h3{
+	overflow:hidden;
 	color: #2f2f2f;
     line-height: 100%;
-    font-size: 19px;
+    font-size: 21px;
     font-weight: 700;
     white-space: nowrap;
     padding-top: 16px;
 }
 
 .content_tiantian_right_title h6{
+	overflow:hidden;
 	color: #666;
     line-height: 100%;
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 6px;
     white-space: nowrap;
 }
@@ -531,7 +533,7 @@ a:hover, a:active {
 .content_push_sub{
 	width:230px;
 	float:left;
-	padding:0 15px 0 0;
+	padding:0 12px 0 0;
 }
 
 .content_push_sub_last{

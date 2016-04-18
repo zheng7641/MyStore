@@ -13,4 +13,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="get" resultMap="NoticeMap">
 		select * from notice where noticeid limit #{first},#{number}
 	</select>
+	
+	<select id="getOneNotice" resultMap="NoticeMap">
+		select * from notice where noticeId = #{noticeId}
+	</select>
 </mapper>

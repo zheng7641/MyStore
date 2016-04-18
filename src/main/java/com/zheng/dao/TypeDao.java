@@ -38,6 +38,13 @@ public interface TypeDao {
 	public int update(Type type);
 	
 	/**
+	 * 获取全部商品类型
+	 * @return
+	 */
+	public List<Type> getAll();
+	
+	
+	/**
 	 * 通过Id查询
 	 * @param id
 	 * @return int

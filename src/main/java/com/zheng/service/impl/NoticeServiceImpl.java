@@ -20,13 +20,11 @@ public class NoticeServiceImpl implements NoticeService{
 	 * 返回首页显示的6个通知
 	 */
 	public List<Notice> getIndexNotice() {
-		List<Notice> noticeList = noticeDao.get(0,6);
-		return noticeList;
+		return noticeDao.get(0,6);
 	}
 
-	public Notice getOneNotice(int id) {
-		
-		return null;
+	public Notice getOneNotice(int noticeId) {
+		return noticeDao.getOneNotice(noticeId);
 	}
 
 	

@@ -31,6 +31,13 @@ public interface NoticeDao {
 	 * @return
 	 */
 	public int update(Notice notice);
+	
+	/**
+	 * 通过ID获取通知
+	 * @param noticeId
+	 * @return
+	 */
+	public Notice getOneNotice(int noticeId);
 
 	/**
 	 * 分页取通知

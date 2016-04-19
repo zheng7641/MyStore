@@ -8,8 +8,8 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script>
 	function sendJson1() {
-		$.post('JsonController/get.do',{
-			name:$('#tb_name').val(),
+		$.post('addgoods.do',{
+			goodsTitle:$('#tb_name').val(),
 			password:$('#tb_password').val()
 			}, 
 			function(data, status) {
@@ -26,5 +26,10 @@
 		<input type="text" name="name" id="tb_name" /> 
 		<input type="text" name="password" id="tb_password" />
 		<button id="btn1" onclick="return sendJson1();">send</button>
+		
+		<form action="addgoods.do" method="post">
+			<input type="text" name="goodsTitle"/>
+			<input type="submit" value="send"/>
+		</form>
 </body>
 </html>

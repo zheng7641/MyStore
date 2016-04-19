@@ -7,4 +7,16 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="getAll" resultType="Type">
 		select * from type
 	</select>
+	
+	<select id="getTypeTree" resultType="Type">
+		select * 
+		from type
+		where fatherTypeId = #{fatherTypeId}
+	</select>
+	
+	<select id="getByLevel" resultType="Type">
+		select * 
+		from type
+		where level = #{level}
+	</select>
 </mapper>

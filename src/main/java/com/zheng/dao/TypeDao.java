@@ -2,6 +2,8 @@ package com.zheng.dao;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Param;
+
 import com.zheng.entity.Type;
 
 public interface TypeDao {
@@ -43,7 +45,16 @@ public interface TypeDao {
 	 */
 	public List<Type> getAll();
 	
+	/**
+	 * 获取所有子类型
+	 * @param level
+	 * @param fatherTypeId
+	 * @return
+	 */
+	public List<Type> getTypeTree(@Param("fatherTypeId")String fatherTypeId);
 	
+	
+	public List<Type> getByLevel(int level);
 	/**
 	 * 通过Id查询
 	 * @param id

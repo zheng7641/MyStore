@@ -48,4 +48,11 @@ public class GoodsController {
 		request.setAttribute("good", null);
 		request.getRequestDispatcher("/goods.jsp").forward(request, response);
 	}
+	
+	@RequestMapping(value="addgoods")
+	public void addGoods(@RequestParam(value="goodsName",required=false)String goodsName,HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException{
+		System.out.println(goodsName);
+		System.out.println(request.getParameter("goodsName"));
+		System.out.println(request.getAttribute("goodsName"));
+	}
 }

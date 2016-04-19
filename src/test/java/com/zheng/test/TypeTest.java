@@ -27,4 +27,18 @@ public class TypeTest {
 		List<Type> typeList = typeDao.getAll();
 		System.out.println(typeList);
 	}
+	
+	@Test
+	public void getTypeTree(){
+		List<Type> typeList = typeDao.getTypeTree("238");
+		System.out.println(typeList);
+	}
+	
+	@Test
+	public void getByLevel(){
+		List<Type> typeList = typeDao.getByLevel(3);
+		for(Type t:typeList){
+			System.out.println("<option value=\""+t.getTypeName()+"\">"+t.getTypeName()+"</option>");
+		}
+	}
 }

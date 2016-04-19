@@ -3,12 +3,15 @@ package com.zheng.entity;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
+
 @Component
 public class Type {
 
 	private int typeId;
 	private int fatherTypeId;
 	private String typeName;
+	private int level;
+	private List<Type> childList;
 
 	private List<Goods> goodsList;
 
@@ -16,18 +19,22 @@ public class Type {
 		super();
 	}
 
-	public Type(int fatherTypeId, String typeName, List<Goods> goodsList) {
+	public Type(int fatherTypeId, String typeName, int level, List<Type> childList, List<Goods> goodsList) {
 		super();
 		this.fatherTypeId = fatherTypeId;
 		this.typeName = typeName;
+		this.level = level;
+		this.childList = childList;
 		this.goodsList = goodsList;
 	}
 
-	public Type(int typeId, int fatherTypeId, String typeName, List<Goods> goodsList) {
+	public Type(int typeId, int fatherTypeId, String typeName, int level, List<Type> childList, List<Goods> goodsList) {
 		super();
 		this.typeId = typeId;
 		this.fatherTypeId = fatherTypeId;
 		this.typeName = typeName;
+		this.level = level;
+		this.childList = childList;
 		this.goodsList = goodsList;
 	}
 
@@ -55,6 +62,22 @@ public class Type {
 		this.typeName = typeName;
 	}
 
+	public int getLevel() {
+		return level;
+	}
+
+	public void setLevel(int level) {
+		this.level = level;
+	}
+
+	public List<Type> getChildList() {
+		return childList;
+	}
+
+	public void setChildList(List<Type> childList) {
+		this.childList = childList;
+	}
+
 	public List<Goods> getGoodsList() {
 		return goodsList;
 	}
@@ -65,8 +88,8 @@ public class Type {
 
 	@Override
 	public String toString() {
-		return "Type [typeId=" + typeId + ", fatherTypeId=" + fatherTypeId + ", typeName=" + typeName + ", goodsList="
-				+ goodsList + "]";
+		return "Type [typeId=" + typeId + ", fatherTypeId=" + fatherTypeId + ", typeName=" + typeName + ", level="
+				+ level + ", childList=" + childList + ", goodsList=" + goodsList + "]";
 	}
 
 }

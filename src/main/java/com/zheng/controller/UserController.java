@@ -1,6 +1,7 @@
 package com.zheng.controller;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -22,11 +23,12 @@ public class UserController {
 
 	@RequestMapping("/login")
 	
-	public String login(@RequestParam("userName") String userName, @RequestParam("password") String password) {
+	public String login(HttpSession session,@RequestParam("userName") String userName, @RequestParam("password") String password) {
 		Subject subject = SecurityUtils.getSubject();
 		UsernamePasswordToken token = new UsernamePasswordToken(userName, password);
 		try{
 			subject.login(token);
+			session.setAttribute("userName", userName);
 			return "redirect:/index.do";
 		}catch(Exception e){
 			e.printStackTrace();

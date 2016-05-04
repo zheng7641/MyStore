@@ -12,4 +12,6 @@ public interface UserService extends BaseService<User> {
 	public User getUserAndRoleByUserName(String userName);
 	
 	public void add(User user);
+	
+	public int getUserId(String userName);
 }

@@ -19,4 +19,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		from type
 		where level = #{level}
 	</select>
+	
+	<select id="getByName" resultType="Type">
+		select *
+		from type
+		where typeName=#{name}
+	</select>
 </mapper>

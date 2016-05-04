@@ -4,4 +4,26 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zheng.dao.OrderDao">
 
+	<delete id="deleteByGoodsId">
+		delete from t_order where goodsId = #{goodsId}
+	</delete>
+	
+	<select id="getOrderList" resultType="Order">
+		select *
+		from t_order
+		where userId = #{userId}
+		and orderId limit #{first},#{number}
+	</select>
+	
+	<select id="getSumOrder" resultType="Integer">
+		select count(*)
+		from t_order
+		where userId = #{userId}
+	</select>
+	
+	<delete id="delete">
+		delete from t_order
+		where userId=#{userId}
+		and goodsId=#{goodsId}
+	</delete>
 </mapper>

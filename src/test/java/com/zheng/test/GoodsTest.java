@@ -1,8 +1,8 @@
 package com.zheng.test;
 
-import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -55,7 +55,7 @@ public class GoodsTest {
 	@Test
 	public void setGoods(){
 		for(int i = 36;i < 100;i++){
-			goodsDao.add("篮球"+i, "商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介"+i, Integer.valueOf(10*i), "质量"+i, "交易地点"+i,String.valueOf(i*1342),"交易方式"+i, new Date(), 225);
+			goodsDao.add("篮球"+i, "商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介"+i, Integer.valueOf(10*i), "质量"+i, "交易地点"+i,String.valueOf(i*1342),"交易方式"+i, new Date(), 225,0);
 		}
 	}
 	
@@ -73,8 +73,13 @@ public class GoodsTest {
 	
 	@Test
 	public void getBySeller(){
-		List<Goods> goodsList = goodsDao.getBySeller(1);
+		List<Goods> goodsList = goodsDao.getBySeller(0);
+		List<Goods> goodsList1 = goodsList.subList(5, 10);
 		for(Goods g:goodsList){
+			System.out.println(g);
+		}
+		System.out.println("---------------------------------");
+		for(Goods g:goodsList1){
 			System.out.println(g);
 		}
 	}
@@ -83,5 +88,41 @@ public class GoodsTest {
 	public void getUserId(){
 		int i = goodsDao.getUserId(1);
 		System.out.println(i);
+	}
+	
+	@Test
+	public void getUUID(){
+		System.out.println(UUID.randomUUID());
+	}
+	
+	@Test
+	public void getGoods(){
+		List<Goods> goodsList = goodsDao.getGoods("篮球女女男男女女难求", 131,"博学", "1313131313", "阿斯顿发斯蒂芬");
+		for(Goods g:goodsList){
+			System.out.println(g);
+		}
+	}
+	
+	@Test
+	public void getPublishNum(){
+		int i = goodsDao.getPublishNum(1);
+		System.out.println(i);
+	}
+	
+	@Test
+	public void getgetByUserId2(){
+		int page = 1;
+		List<Goods> goodsList = goodsDao.getByUserId2(1, 5*(page-1), 5);
+		for(Goods g:goodsList){
+			System.out.println(g);
+		}
+	}
+	
+	@Test
+	public void getOrderList(){
+		List<Goods> goodsList = goodsDao.getOrderList(1, 0, 2);
+		for(Goods g:goodsList){
+			System.out.println(g);
+		}
 	}
 }

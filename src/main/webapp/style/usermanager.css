@@ -191,7 +191,7 @@ textarea{resize:none;}
 }
 
 .um-right-items-intro {
-	margin-top:30px;
+	margin-top:50px;
 	float:left;
 	font-size: 14px;
 	max-width: 300px;
@@ -241,6 +241,10 @@ textarea{resize:none;}
 	line-height:25px;
 	width:60px;
 	float:left;
+}
+
+.um-right-publish-img{
+	margin: 20px 0px 20px 70px;
 }
 
 .um-right-publish-input{
@@ -386,6 +390,7 @@ a.files, a.files input {
 
 /* 商品描述框 */
 .goodsdescription{
+	margin-left:70px;
 	width:100%;
 }
 
@@ -399,3 +404,73 @@ a.files, a.files input {
     vertical-align: middle;
     background-color: #efefef;
 }
+
+
+/* 分页栏 */
+.bottompage {
+	height: 38px;
+	width: 100%;
+}
+
+.jogger {
+	float: right;
+	width: 400px;
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	PADDING-BOTTOM: 2px;
+	MARGIN: 7px;
+	PADDING-TOP: 2px;
+	FONT-FAMILY: "Lucida Sans Unicode", "Lucida Grande", LucidaGrande,
+		"Lucida Sans", Geneva, Verdana, sans-serif
+}
+
+.jogger A {
+	PADDING-RIGHT: 0.64em;
+	PADDING-LEFT: 0.64em;
+	PADDING-BOTTOM: 0.43em;
+	MARGIN: 2px;
+	COLOR: #fff;
+	PADDING-TOP: 0.5em;
+	BACKGROUND-COLOR: #ee4e4e;
+	TEXT-DECORATION: none
+}
+
+.jogger A:hover {
+	PADDING-RIGHT: 0.64em;
+	PADDING-LEFT: 0.64em;
+	PADDING-BOTTOM: 0.43em;
+	MARGIN: 2px;
+	COLOR: #fff;
+	PADDING-TOP: 0.5em;
+	BACKGROUND-COLOR: #de1818
+}
+
+.jogger A:active {
+	PADDING-RIGHT: 0.64em;
+	PADDING-LEFT: 0.64em;
+	PADDING-BOTTOM: 0.43em;
+	MARGIN: 2px;
+	COLOR: #fff;
+	PADDING-TOP: 0.5em;
+	BACKGROUND-COLOR: #de1818
+}
+
+.jogger SPAN.current {
+	PADDING-RIGHT: 0.64em;
+	PADDING-LEFT: 0.64em;
+	PADDING-BOTTOM: 0.43em;
+	MARGIN: 2px;
+	COLOR: #6d643c;
+	PADDING-TOP: 0.5em;
+	BACKGROUND-COLOR: #f6efcc
+}
+
+.jogger SPAN.disabled {
+	DISPLAY: none
+}
+
+.tcdPageCode{margin: 15px 20px;text-align: right;color: #ccc;}
+.tcdPageCode a{display: inline-block;color: #428bca;display: inline-block;height: 25px;	line-height: 25px;	padding: 0 10px;border: 1px solid #ddd;	margin: 0 2px;border-radius: 4px;vertical-align: middle;}
+.tcdPageCode a:hover{text-decoration: none;border: 1px solid #428bca;}
+.tcdPageCode span.current{display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;color: #fff;background-color: #428bca;	border: 1px solid #428bca;border-radius: 4px;vertical-align: middle;}
+.tcdPageCode span.disabled{	display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;	color: #bfbfbf;background: #f2f2f2;border: 1px solid #bfbfbf;border-radius: 4px;vertical-align: middle;}

@@ -22,5 +22,10 @@ public class TypeServiceImpl implements TypeService {
 		return typeList;
 	}
 	
-
+	/**
+	 * 通过类型名获取类型对象
+	 */
+	public Type getByName(String name){
+		return typeDao.getByName(name);
+	}
 }

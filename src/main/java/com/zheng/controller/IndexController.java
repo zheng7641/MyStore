@@ -3,6 +3,7 @@ package com.zheng.controller;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.zheng.service.GoodsService;
 import com.zheng.service.NoticeService;
+import com.zheng.service.OrderService;
 
 @Controller
 public class IndexController {
@@ -20,6 +22,9 @@ public class IndexController {
 	@Resource
 	private GoodsService goodsService;
 
+	@Resource
+	private OrderService orderService;
+	
 	@RequestMapping("/index")
 	public void getIndex(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		request.setAttribute("noticeList", noticeService.getIndexNotice());// ֪ͨ
@@ -47,5 +52,42 @@ public class IndexController {
 		request.setAttribute("goods", goodsService.getById(Integer.valueOf(id)));
 		request.setAttribute("otherGoodsList", goodsService.getBySeller(Integer.valueOf(id)));
 		request.getRequestDispatcher("/goods.jsp").forward(request, response);
+	}
+	
+	@RequestMapping("/usermanager")
+	public void getUsermanager(@RequestParam(value="userId",required=false)String userId,@RequestParam(value="page",required=false)String page,HttpServletRequest request,HttpServletResponse response,HttpSession session) throws Exception{
+		if(page==null||Integer.valueOf(page)<1||page.equals("")){
+			page = "1";
+		}
+		request.setAttribute("goodsList", goodsService.getByUserId2(Integer.valueOf(userId),5*(Integer.valueOf(page)-1),5));
+		session.setAttribute("userId", userId);
+		request.setAttribute("page", page);
+		request.setAttribute("allPage", goodsService.getPublishNum(Integer.valueOf(userId))/5+1);
+		request.getRequestDispatcher("/usermanager.jsp").forward(request, response);
+	}
+	
+	@RequestMapping("/umdelete")
+	public void deleteGoods(@RequestParam(value="goodsId",required=false)String goodsId,HttpServletRequest request,HttpServletResponse response,HttpSession session) throws Exception{
+		goodsService.deleteGoods(Integer.valueOf(goodsId));
+		response.sendRedirect("/MyStore/usermanager.do?userId="+session.getAttribute("userId"));
+		//request.getRequestDispatcher("/usermanager.do?userId="+session.getAttribute("userId")).forward(request, response);
+	}
+	
+	@RequestMapping("/shoopingCart")
+	public void getShoopingCart(@RequestParam(value="userId",required=false)String userId,@RequestParam(value="page",required=false)String page,HttpServletRequest request,HttpServletResponse response,HttpSession session) throws Exception{
+		if(page==null||Integer.valueOf(page)<1||page.equals("")){
+			page = "1";
+		}
+		request.setAttribute("goodsList",goodsService.getOrderList(Integer.valueOf(userId), 5*(Integer.valueOf(page)-1),5));
+		request.setAttribute("allPage", orderService.getSumOrder(Integer.valueOf(userId))/5+1);
+		request.setAttribute("page", page);
+		session.setAttribute("userId", userId);
+		request.getRequestDispatcher("/shoopingCart.jsp").forward(request, response);
+	}
+	
+	@RequestMapping("/scDelete")
+	public void deleteShoopingCart(@RequestParam(value="userId",required=false)String userId,@RequestParam(value="goodsId",required=false)String goodsId,HttpServletRequest request,HttpServletResponse response,HttpSession session) throws Exception{
+		orderService.delete(Integer.valueOf(userId), Integer.valueOf(goodsId));
+		response.sendRedirect("/MyStore/shoopingCart.do?userId="+session.getAttribute("userId"));
 	}
 }

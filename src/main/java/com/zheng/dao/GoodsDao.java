@@ -22,15 +22,15 @@ public interface GoodsDao {
 	 * @param timestamp
 	 * @return
 	 */
-	public int add(@Param("goodsName")String goodsName,@Param("goodsDescription")String goodsDescription,@Param("price")int price,@Param("quality")String quality,@Param("tradingPosition")String tradingPosition,@Param("contactInformation")String contactInformation,@Param("businessDeal")String businessDeal,@Param("CreateTime")Date createTime,@Param("typeId")int typeId);
+	public int add(@Param("goodsName")String goodsName,@Param("goodsDescription")String goodsDescription,@Param("price")int price,@Param("quality")String quality,@Param("tradingPosition")String tradingPosition,@Param("contactInformation")String contactInformation,@Param("businessDeal")String businessDeal,@Param("CreateTime")Date createTime,@Param("typeId")int typeId,@Param("userId")int userId);
 	
 	/**
-	 * 删除
+	 * 删除商品
 	 * 
-	 * @param id
+	 * @param goodsId
 	 * @return
 	 */
-	public int delete(Integer id);
+	public int delete(int goodsId);
 	
 	/**
 	 * 删除，通过字段
@@ -81,11 +81,27 @@ public interface GoodsDao {
 	public List<Goods> getBySeller(int userId);
 	
 	/**
+	 * 分页通过卖家id查找商品
+	 * @param userId
+	 * @param first
+	 * @param number
+	 * @return
+	 */
+	public List<Goods> getByUserId2(@Param("userId")int userId,@Param("first")int first,@Param("number")int number);
+	
+	/**
 	 * 通过商品id查找卖家id
 	 * @param goodsId
 	 * @return
 	 */
 	public int getUserId(int goodsId);
+	
+	/**
+	 * 获取用户发布的商品总数
+	 * @param userId
+	 * @return
+	 */
+	public int getPublishNum(int userId);
 	
 	/**
 	 * 通过商品类型查找商品
@@ -104,6 +120,17 @@ public interface GoodsDao {
 	public List<Goods> getSpecialGoods(@Param("typeName")String typeName,@Param("first")int first,@Param("number")int number);
 	
 	/**
+	 * 查询goodsId
+	 * @param goodsName
+	 * @param price
+	 * @param tradingPosition
+	 * @param contactInformation
+	 * @param businessDeal
+	 * @return
+	 */
+	public List<Goods> getGoods(@Param("goodsName")String goodsName,@Param("price")int price,@Param("tradingPosition")String tradingPosition,@Param("contactInformation")String contactInformation,@Param("businessDeal")String businessDeal);
+	
+	/**
 	 * 分页查询商品
 	 * @param begin 开始的ID号
 	 * @param number 每页显示的数量
@@ -117,6 +144,13 @@ public interface GoodsDao {
 	 * @return list<Goods>
 	 */
 	public List<Goods> getHotList(int number);
+	
+	/**
+	 * 获取用户的购物车
+	 * @param userId
+	 * @return
+	 */
+	public List<Goods> getOrderList(@Param("userId")int userId,@Param("first")int first,@Param("number")int number);
 	
 	/**
 	 * 通过ID查询字段

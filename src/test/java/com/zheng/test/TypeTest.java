@@ -41,4 +41,10 @@ public class TypeTest {
 			System.out.println("<option value=\""+t.getTypeName()+"\">"+t.getTypeName()+"</option>");
 		}
 	}
+	
+	@Test
+	public void getTypeid(){
+		Type type = typeDao.getByName("ÀºÇò");
+		System.out.println(type);
+	}
 }

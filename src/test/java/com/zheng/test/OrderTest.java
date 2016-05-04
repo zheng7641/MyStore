@@ -7,36 +7,30 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.zheng.dao.ImagesDao;
+import com.zheng.dao.OrderDao;
 import com.zheng.entity.Goods;
-import com.zheng.entity.Images;
 
-public class ImagesTest {
-	private ImagesDao imagesDao;
+public class OrderTest {
 
+	private OrderDao orderDao;
 	@Before
 	public void before() throws Exception {
 		@SuppressWarnings("resource")
 		ApplicationContext context = new ClassPathXmlApplicationContext(
 				new String[] { "classpath:applicationContext.xml", "classpath:mybatis-config.xml" });
-		imagesDao = (ImagesDao) context.getBean("imagesDao");
+		orderDao = (OrderDao) context.getBean("orderDao");
 	}
-
+	
 	@Test
-	public void getByType() {
-		List<Images> imagesList = imagesDao.getByGoodsId(1);
-		System.out.println(imagesList);
-	}
-
-	@Test
-	public void setImages() {
-		for (int i = 15; i < 55; i++) {
-			imagesDao.setImages("http://localhost:8080/MyStore/goods/lanqiu" + i + ".jpg", i);
+	public void getOrderList(){
+		List<Goods> orderList = orderDao.getOrderList(1,1,1);
+		for(Goods o:orderList){
+			System.out.println(o);
 		}
 	}
 	
 	@Test
-	public void deleteImages(){
-		imagesDao.deleteImages(33);
+	public void delete(){
+		orderDao.delete(1, 25);
 	}
 }

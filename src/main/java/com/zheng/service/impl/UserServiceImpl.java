@@ -30,6 +30,10 @@ public class UserServiceImpl implements UserService {
 		roleDao.addRole(userId, YOUKE);
 	}
 
+	public int getUserId(String userName){
+		return userDao.getId(userName);
+	}
+	
 	public int delete(Integer id) {
 		// TODO Auto-generated method stub
 		return 0;

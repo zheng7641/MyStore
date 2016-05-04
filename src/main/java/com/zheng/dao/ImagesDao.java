@@ -11,4 +11,6 @@ public interface ImagesDao {
 	public List<Images> getByGoodsId(int goodsId);
 	
 	public int setImages(@Param("imagesUrl")String imagesUrl,@Param("goodsId")int goodsId);
+	
+	public int deleteImages(int goodsId);
 }

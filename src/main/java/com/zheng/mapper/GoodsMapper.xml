@@ -30,8 +30,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	
 	<insert id="add">
 		insert into 
-		goods(goodsName,goodsDescription,price,quality,tradingPosition,contactInformation,businessDeal,CreateTime,typeId)
-		values(#{goodsName},#{goodsDescription},#{price},#{quality},#{tradingPosition},#{contactInformation},#{businessDeal},#{CreateTime},#{typeId})
+		goods(goodsName,goodsDescription,price,quality,tradingPosition,contactInformation,businessDeal,CreateTime,typeId,userId)
+		values(#{goodsName},#{goodsDescription},#{price},#{quality},#{tradingPosition},#{contactInformation},#{businessDeal},#{CreateTime},#{typeId},#{userId})
 	</insert>
 	
 	<select id="getByType" resultMap="GoodsMap">
@@ -105,5 +105,44 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		select userId
 		from goods
 		where goodsId = #{goodsId}
+	</select>
+	
+	<select id="getGoods" resultType="Goods">
+		select * 
+		from goods
+		where goodsName=#{goodsName}
+		and price = #{price}
+		and tradingPosition = #{tradingPosition}
+		and contactInformation = #{contactInformation}
+		and businessDeal = #{businessDeal}
+	</select>
+	
+	<delete id="delete">
+		delete from goods where goodsId = #{goodsId}
+	</delete>
+	
+	<select id="getPublishNum" resultType="Integer">
+		select count(*)
+		from goods
+		where userId = #{userId}
+	</select>
+	
+	<select id="getByUserId2" resultType="Goods">
+		select * 
+		from goods
+		where userId = #{userId}
+		and goodsId limit #{first},#{number}
+	</select>
+	
+	<select id="getOrderList" resultType="Goods">
+		select * 
+		from goods 
+		where goodsId in
+			(
+				select distinct goodsId 
+				from t_order 
+				where userId =#{userId}
+			)
+		and goodsId limit #{first},#{number}
 	</select>
 </mapper>

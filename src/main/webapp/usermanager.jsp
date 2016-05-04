@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,6 +8,8 @@
 <title>已发布列表</title>
 <link href="style/usermanager.css" rel="stylesheet" type="text/css" />
 <link href="style/css.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.page.js"></script>
 </head>
 <body>
 	<!-- 头部标题栏 -->
@@ -62,21 +65,22 @@
 						<span>已发布列表</span>
 					</div>
 					<div class="um-right-wrapper">
+					<c:forEach items="${goodsList}" var="goods" begin="0" end ="5">
 						<div class="um-right-items">
 							<div class="um-right-items-top">
-								<span class="um-right-items-top-item">2015-11-11</span> <span
-									class="um-right-items-top-item">商品号:</span> <span>123123123123</span>
+								<span class="um-right-items-top-item">${goods.createTime }</span> <span
+									class="um-right-items-top-item">商品号:</span> <span>${goods.goodsId*98113223 }</span>
 
-								<a class="um-right-items-top-item2" href="#">删除</a> <a
-									class="um-right-items-top-item2" href="#">修改</a>
+								<a class="um-right-items-top-item2" href="${pageContext.request.contextPath}/umdelete.do?goodsId=${goods.goodsId}">删除</a> <a
+									class="um-right-items-top-item2" href="${pageContext.request.contextPath}/good.do?goodId=${goods.goodsId}"></a>
 							</div>
 							<div class="um-right-items-body">
 								<div class="um-right-items-img">
-									<img src="goods/lanqiu.jpg"
+									<img src="${goods.imagesList[0].imagesUrl}"
 										onload='if (this.width>100 || this.height>100) if (this.width/this.height>100/100) this.width=100; else this.height=100;'>
 								</div>
 								<div class="um-right-items-intro">
-									<a href="#">这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称</a>
+									<a href="${pageContext.request.contextPath}/good.do?goodId=${goods.goodsId}">${goods.goodsName }</a>
 								</div>
 								<div class="um-right-items-watch">
 									<span>已有</span>
@@ -85,151 +89,31 @@
 								</div>
 								<div class="um-right-items-money">
 									<span>￥</span>
-									<span>400</span>
+									<span>${goods.price }</span>
 								</div>
 							</div>
 						</div>
-						
-						<div class="um-right-items">
-							<div class="um-right-items-top">
-								<span class="um-right-items-top-item">2015-11-11</span> <span
-									class="um-right-items-top-item">订单号:</span> <span>123123123123</span>
-
-								<a class="um-right-items-top-item2" href="#">删除</a> <a
-									class="um-right-items-top-item2" href="#">修改</a>
-							</div>
-							<div class="um-right-items-body">
-								<div class="um-right-items-img">
-									<img src="goods/lanqiu.jpg"
-										onload='if (this.width>100 || this.height>100) if (this.width/this.height>100/100) this.width=100; else this.height=100;'>
-								</div>
-								<div class="um-right-items-intro">
-									<a href="#">这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称</a>
-								</div>
-								<div class="um-right-items-watch">
-									<span>已有</span>
-									<span>300</span>
-									<span>人浏览</span>
-								</div>
-								<div class="um-right-items-money">
-									<span>￥</span>
-									<span>400</span>
-								</div>
-							</div>
-						</div>
-						<div class="um-right-items">
-							<div class="um-right-items-top">
-								<span class="um-right-items-top-item">2015-11-11</span> <span
-									class="um-right-items-top-item">订单号:</span> <span>123123123123</span>
-
-								<a class="um-right-items-top-item2" href="#">删除</a> <a
-									class="um-right-items-top-item2" href="#">修改</a>
-							</div>
-							<div class="um-right-items-body">
-								<div class="um-right-items-img">
-									<img src="goods/lanqiu.jpg"
-										onload='if (this.width>100 || this.height>100) if (this.width/this.height>100/100) this.width=100; else this.height=100;'>
-								</div>
-								<div class="um-right-items-intro">
-									<a href="#">这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称</a>
-								</div>
-								<div class="um-right-items-watch">
-									<span>已有</span>
-									<span>300</span>
-									<span>人浏览</span>
-								</div>
-								<div class="um-right-items-money">
-									<span>￥</span>
-									<span>400</span>
-								</div>
-							</div>
-						</div>
-						<div class="um-right-items">
-							<div class="um-right-items-top">
-								<span class="um-right-items-top-item">2015-11-11</span> <span
-									class="um-right-items-top-item">订单号:</span> <span>123123123123</span>
-
-								<a class="um-right-items-top-item2" href="#">删除</a> <a
-									class="um-right-items-top-item2" href="#">修改</a>
-							</div>
-							<div class="um-right-items-body">
-								<div class="um-right-items-img">
-									<img src="goods/lanqiu.jpg"
-										onload='if (this.width>100 || this.height>100) if (this.width/this.height>100/100) this.width=100; else this.height=100;'>
-								</div>
-								<div class="um-right-items-intro">
-									<a href="#">这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称</a>
-								</div>
-								<div class="um-right-items-watch">
-									<span>已有</span>
-									<span>300</span>
-									<span>人浏览</span>
-								</div>
-								<div class="um-right-items-money">
-									<span>￥</span>
-									<span>400</span>
-								</div>
-							</div>
-						</div>
-						<div class="um-right-items">
-							<div class="um-right-items-top">
-								<span class="um-right-items-top-item">2015-11-11</span> <span
-									class="um-right-items-top-item">订单号:</span> <span>123123123123</span>
-
-								<a class="um-right-items-top-item2" href="#">删除</a> <a
-									class="um-right-items-top-item2" href="#">修改</a>
-							</div>
-							<div class="um-right-items-body">
-								<div class="um-right-items-img">
-									<img src="goods/lanqiu.jpg"
-										onload='if (this.width>100 || this.height>100) if (this.width/this.height>100/100) this.width=100; else this.height=100;'>
-								</div>
-								<div class="um-right-items-intro">
-									<a href="#">这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称</a>
-								</div>
-								<div class="um-right-items-watch">
-									<span>已有</span>
-									<span>300</span>
-									<span>人浏览</span>
-								</div>
-								<div class="um-right-items-money">
-									<span>￥</span>
-									<span>400</span>
-								</div>
-							</div>
-						</div>
-						<div class="um-right-items">
-							<div class="um-right-items-top">
-								<span class="um-right-items-top-item">2015-11-11</span> <span
-									class="um-right-items-top-item">订单号:</span> <span>123123123123</span>
-
-								<a class="um-right-items-top-item2" href="#">删除</a> <a
-									class="um-right-items-top-item2" href="#">修改</a>
-							</div>
-							<div class="um-right-items-body">
-								<div class="um-right-items-img">
-									<img src="goods/lanqiu.jpg"
-										onload='if (this.width>100 || this.height>100) if (this.width/this.height>100/100) this.width=100; else this.height=100;'>
-								</div>
-								<div class="um-right-items-intro">
-									<a href="#">这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称这是商品的名称</a>
-								</div>
-								<div class="um-right-items-watch">
-									<span>已有</span>
-									<span>300</span>
-									<span>人浏览</span>
-								</div>
-								<div class="um-right-items-money">
-									<span>￥</span>
-									<span>400</span>
-								</div>
-							</div>
-						</div>
+						</c:forEach>
 					</div>
 				</div>
 			</div>
+			<div class="bottompage">
+					 <div class="tcdPageCode">
+   					 </div>
+				</div>
 		</div>
 	</div>
+	<script>
+	$(document).ready(function(){
+	    $(".tcdPageCode").createPage({
+	        pageCount:${allPage},
+	        current:${page},
+	        backFn:function(p){
+	        	window.location.href="http://localhost:8080/MyStore/usermanager.do?userId=${userId}&page="+p;
+	        }
+	    })
+	});
+</script>
 	<%@ include file="partofpage/foot.jsp" %>
 </body>
 </html>

@@ -8,4 +8,6 @@ public interface TypeService {
 
 	
 	public List<Type> getTypeTree(String fatherTypeId);
+	
+	public Type getByName(String name);
 }

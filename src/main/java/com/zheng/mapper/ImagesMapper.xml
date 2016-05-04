@@ -16,5 +16,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		insert into images(imagesUrl,goodsId) values(#{imagesUrl},#{goodsId})
 	</insert>
 	
-	
+	<delete id="deleteImages">
+		delete from images where goodsId = #{goodsId}
+	</delete>
 </mapper>

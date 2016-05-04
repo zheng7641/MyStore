@@ -28,7 +28,7 @@ public interface GoodsMessageDao {
 	 * @param id
 	 * @return int
 	 */
-	public int delete(Integer id);
+	public int delete(int goodsId);
 
 	/**
 	 * 删除该用户的所有评论

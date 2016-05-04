@@ -14,6 +14,8 @@ import org.springframework.stereotype.Component;
 public class Order {
 
 	private int orderId;
+	private int userId;
+	private int goodsId;
 	private List<User> userList;
 	private List<Goods> goodsList;
 
@@ -21,15 +23,19 @@ public class Order {
 		super();
 	}
 
-	public Order(List<User> userList, List<Goods> goodsList) {
+	public Order(int userId, int goodsId, List<User> userList, List<Goods> goodsList) {
 		super();
+		this.userId = userId;
+		this.goodsId = goodsId;
 		this.userList = userList;
 		this.goodsList = goodsList;
 	}
 
-	public Order(int orderId, List<User> userList, List<Goods> goodsList) {
+	public Order(int orderId, int userId, int goodsId, List<User> userList, List<Goods> goodsList) {
 		super();
 		this.orderId = orderId;
+		this.userId = userId;
+		this.goodsId = goodsId;
 		this.userList = userList;
 		this.goodsList = goodsList;
 	}
@@ -40,6 +46,22 @@ public class Order {
 
 	public void setOrderId(int orderId) {
 		this.orderId = orderId;
+	}
+
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+
+	public int getGoodsId() {
+		return goodsId;
+	}
+
+	public void setGoodsId(int goodsId) {
+		this.goodsId = goodsId;
 	}
 
 	public List<User> getUserList() {
@@ -60,7 +82,8 @@ public class Order {
 
 	@Override
 	public String toString() {
-		return "Order [orderId=" + orderId + ", userList=" + userList + ", goodsList=" + goodsList + "]";
+		return "Order [orderId=" + orderId + ", userId=" + userId + ", goodsId=" + goodsId + ", userList=" + userList
+				+ ", goodsList=" + goodsList + "]";
 	}
 
 }

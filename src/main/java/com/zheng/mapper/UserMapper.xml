@@ -11,6 +11,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<result property="sex" column="sex" />
 		<result property="phone" column="phone" />
 		<result property="location" column="location" />
+		<result property="createTime" column="createtime"/>
+		<result property="email" column="email"/>
 	</resultMap>
 
 	<resultMap type="User" id="userRoleMap" extends="UserMap">
@@ -22,12 +24,16 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	<insert id="add" parameterType="User">
 		insert into
-		user(userName,password,nickName,sex,phone,location)
-		values(#{userName},#{password},#{nickName},#{sex},#{phone},#{location})
+		user(userId,userName,password,nickName,sex,phone,location,createTime,email)
+		values(#{userId},#{userName},#{password},#{nickName},#{sex},#{phone},#{location},#{createTime},#{email})
 	</insert>
 
 	<delete id="delete" parameterType="String">
 		delete from user where userName = #{userName}
+	</delete>
+
+	<delete id="deleteById" parameterType="Integer">
+		delete from user where userId = #{userId}
 	</delete>
 
 	<delete id="deleteRole" parameterType="String">
@@ -42,12 +48,15 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	<update id="update" parameterType="User">
 		update user
-		set password = #{password},
+		set 
+		userName = #{userName},
+		password = #{password},
 		nickName=#{nickName},
 		sex=#{sex},
 		phone=#{phone},
-		location=#{location}
-		where userName = #{userName}
+		location=#{location},
+		email = #{email}
+		where userId = #{userId}
 	</update>
 
 	<select id="get" parameterType="String" resultMap="UserMap">
@@ -55,6 +64,16 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		from
 		user
 		where userName=#{userName}
+	</select>
+
+	<select id="getAll" parameterType="Integer" resultMap="UserMap">
+		select * 
+		from user
+		where userId limit #{first},#{number}
+	</select>
+	
+	<select id="getCount" resultType="Integer">
+		select count(*) from user;
 	</select>
 
 	<select id="getUserAndRole" parameterType="String" resultMap="userRoleMap">

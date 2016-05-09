@@ -1,5 +1,8 @@
 package com.zheng.dao;
 
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 
 import com.zheng.entity.User;
@@ -22,6 +25,13 @@ public interface UserDao {
 	 * @return 总数
 	 */
 	public int delete(String userName);
+	
+	/**
+	 * 通过ID删除用户
+	 * @param userId
+	 * @return
+	 */
+	public int deleteById(int userId);
 	
 	/**
 	 * 删除用户的所有角色
@@ -47,6 +57,20 @@ public interface UserDao {
 	 */
 	public User get(String userName);
 
+	/**
+	 * 获取用户信息
+	 * @param page
+	 * @param num
+	 * @return
+	 */
+	public List<User> getAll(@Param("first")int frist,@Param("number")int number);
+	
+	/**
+	 * 获取用户总数
+	 * @return
+	 */
+	public int getCount();
+	
 	/**
 	 * 获取用户和用户的所有角色
 	 * 

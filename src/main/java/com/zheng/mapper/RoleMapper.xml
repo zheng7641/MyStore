@@ -32,4 +32,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		values(#{userId},#{roleId})
 	</insert>
 
+	<delete id="deleteRoleByUserId" parameterType="Integer">
+		delete from user_role where userId = #{userId}
+	</delete>
+
 </mapper> 

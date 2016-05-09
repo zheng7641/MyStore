@@ -2,8 +2,10 @@ package com.zheng.controller;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.List;
 import java.util.UUID;
 
 import javax.annotation.Resource;
@@ -18,10 +20,16 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
+import com.zheng.entity.Goods;
 import com.zheng.service.GoodsService;
 import com.zheng.service.ImagesService;
 import com.zheng.service.TypeService;
 import com.zheng.service.UserService;
+import com.zheng.util.WriteUtil;
+
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+import net.sf.json.JsonConfig;
 
 @Controller
 public class GoodsController {
@@ -104,8 +112,10 @@ public class GoodsController {
 		System.out.println(place);
 		System.out.println(textfield3);
 		System.out.println(userName);
-		
-		goodsService.add(goodsName, textfield3, Integer.valueOf(goodsPrice), new_old, place, contactInformation, businessdeal, new Date(), typeService.getByName(goodsType).getTypeId(),userService.getUserId(userName));
+		Date currentTime = new Date();
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String createTime = formatter.format(currentTime);
+		goodsService.add(goodsName, textfield3, Integer.valueOf(goodsPrice), new_old, place, contactInformation, businessdeal, createTime, typeService.getByName(goodsType).getTypeId(),userService.getUserId(userName));
 		int goodsId = goodsService.getGoods(goodsName, Integer.valueOf(goodsPrice), place, contactInformation, businessdeal).get(0).getGoodsId();
 		//----------------------------------图片上传部分---------------------------------
 		//创建一个通用的多部分解析器  
@@ -144,5 +154,22 @@ public class GoodsController {
         }  
 		//----------------------------------图片上传部分---------------------------------
         request.getRequestDispatcher("/index.do").forward(request, response);
+	}
+	
+	@RequestMapping("getGoodsList")
+	public void getGoodsList(@RequestParam("page")String page,@RequestParam("rows")String rows,HttpServletResponse response) throws Exception{
+		List<Goods> goodsList = goodsService.getList((Integer.valueOf(page)-1)*Integer.valueOf(rows), Integer.valueOf(rows));
+		int count = goodsService.getCount();
+		JsonConfig jsonConfig = new JsonConfig();
+		JSONArray row = JSONArray.fromObject(goodsList, jsonConfig);
+		JSONObject result = new JSONObject();
+		result.put("rows", row);
+		result.put("total", count);
+		WriteUtil.write(response, result);
+	}
+	
+	@RequestMapping("deleteGoods")
+	public void deleteGoods(@RequestParam("ids")String ids,HttpServletResponse response) throws Exception{
+		goodsService.delete(ids);
 	}
 }

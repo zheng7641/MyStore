@@ -94,3 +94,89 @@
 .icon-large-chart{
 	background:url('icons/large_chart.png') no-repeat center center;
 }
+
+.icon-home{
+	background:url('usericons/home.png') no-repeat center center;
+}
+.icon-permission{
+	background:url('usericons/permission.png') no-repeat center center;
+}
+.icon-user{
+	background:url('usericons/user.png') no-repeat center center;
+}
+.icon-course{
+	background:url('usericons/course.png') no-repeat center center;
+}
+.icon-item{
+	background:url('usericons/item.png') no-repeat center center;
+}
+
+.icon-userManage{
+	background:url('usericons/userManage.png') no-repeat center center;
+}
+
+.icon-roleManage{
+	background:url('usericons/roleManage.png') no-repeat center center;
+}
+
+.icon-menuManage{
+	background:url('usericons/menuManage.png') no-repeat center center;
+}
+.icon-modifyPassword{
+	background:url('usericons/modifyPassword.png') no-repeat center center;
+}
+.icon-exit{
+	background:url('usericons/exit.png') no-repeat center center;
+}
+
+.icon-tag{
+	background:url('usericons/tag.png') no-repeat center center;
+}
+
+.icon-comment{
+	background:url('usericons/comment.png') no-repeat center center;
+}
+
+.icon-order{
+	background:url('usericons/order.png') no-repeat center center;
+}
+
+.icon-news{
+	background:url('usericons/news.png') no-repeat center center;
+}
+
+.icon-notice{
+	background:url('usericons/notice.png') no-repeat center center;
+}
+
+.icon-product{
+	background:url('usericons/product.png') no-repeat center center;
+}
+
+.icon-manage{
+	background:url('usericons/manage.png') no-repeat center center;
+}
+
+.icon-hot{
+	background:url('usericons/hot.png') no-repeat center center;
+}
+
+.icon-special{
+	background:url('usericons/special.png') no-repeat center center;
+}
+
+.icon-refresh{
+	background:url('usericons/refresh.png') no-repeat center center;
+}
+
+.icon-fahuo{
+	background:url('usericons/fahuo.png') no-repeat center center;
+}
+
+.icon-shenhe{
+	background:url('usericons/shenhe.png') no-repeat center center;
+}
+
+.icon-detail{
+	background:url('usericons/detail.png') no-repeat center center;
+}

@@ -1,5 +1,6 @@
 package com.zheng.test;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -55,7 +56,10 @@ public class GoodsTest {
 	@Test
 	public void setGoods(){
 		for(int i = 36;i < 100;i++){
-			goodsDao.add("篮球"+i, "商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介"+i, Integer.valueOf(10*i), "质量"+i, "交易地点"+i,String.valueOf(i*1342),"交易方式"+i, new Date(), 225,0);
+			Date currentTime = new Date();
+			SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			String createTime = formatter.format(currentTime);
+			goodsDao.add("篮球"+i, "商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介"+i, Integer.valueOf(10*i), "质量"+i, "交易地点"+i,String.valueOf(i*1342),"交易方式"+i, createTime, 225,0);
 		}
 	}
 	
@@ -124,5 +128,19 @@ public class GoodsTest {
 		for(Goods g:goodsList){
 			System.out.println(g);
 		}
+	}
+	
+	@Test
+	public void getList(){
+		List<Goods> goodsList = goodsDao.getList(0, 10);
+		for(Goods g:goodsList){
+			System.out.println(g);
+		}
+	}
+	
+	@Test
+	public void getCount(){
+		int count = goodsDao.getCount();
+		System.out.println(count);
 	}
 }

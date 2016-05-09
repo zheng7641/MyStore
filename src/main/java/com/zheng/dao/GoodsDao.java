@@ -1,6 +1,5 @@
 package com.zheng.dao;
 
-import java.util.Date;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
@@ -22,7 +21,7 @@ public interface GoodsDao {
 	 * @param timestamp
 	 * @return
 	 */
-	public int add(@Param("goodsName")String goodsName,@Param("goodsDescription")String goodsDescription,@Param("price")int price,@Param("quality")String quality,@Param("tradingPosition")String tradingPosition,@Param("contactInformation")String contactInformation,@Param("businessDeal")String businessDeal,@Param("CreateTime")Date createTime,@Param("typeId")int typeId,@Param("userId")int userId);
+	public int add(@Param("goodsName")String goodsName,@Param("goodsDescription")String goodsDescription,@Param("price")int price,@Param("quality")String quality,@Param("tradingPosition")String tradingPosition,@Param("contactInformation")String contactInformation,@Param("businessDeal")String businessDeal,@Param("CreateTime")String createTime,@Param("typeId")int typeId,@Param("userId")int userId);
 	
 	/**
 	 * 删除商品
@@ -136,7 +135,7 @@ public interface GoodsDao {
 	 * @param number 每页显示的数量
 	 * @return list<Goods>
 	 */
-	public List<Goods> getList(int begin,int number);
+	public List<Goods> getList(@Param("first")int first,@Param("number")int number);
 	
 	/**
 	 * 获取最火商品列表
@@ -175,4 +174,11 @@ public interface GoodsDao {
 	 * @return
 	 */
 	public int getTotal(String typeName);
+
+	/**
+	 * 获取商品总数
+	 * @return
+	 */
+	public int getCount();
+	
 }

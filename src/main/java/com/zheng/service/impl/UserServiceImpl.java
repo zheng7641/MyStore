@@ -1,7 +1,6 @@
 package com.zheng.service.impl;
 
 import java.util.List;
-import java.util.Map;
 
 import javax.annotation.Resource;
 
@@ -9,14 +8,17 @@ import org.springframework.stereotype.Component;
 
 import com.zheng.dao.RoleDao;
 import com.zheng.dao.UserDao;
+import com.zheng.entity.Goods;
 import com.zheng.entity.User;
+import com.zheng.service.GoodsService;
+import com.zheng.service.OrderService;
 import com.zheng.service.UserService;
 
 @Component
 public class UserServiceImpl implements UserService {
 
 	private static final int ADMIN = 1;
-	private static final int YOUKE = 2;
+	private static final int HUIYUAN = 2;
 	
 	@Resource
 	private UserDao userDao;
@@ -24,68 +26,50 @@ public class UserServiceImpl implements UserService {
 	@Resource
 	private RoleDao roleDao;
 	
+	@Resource
+	private GoodsService goodsService;
+	
+	@Resource
+	private OrderService orderSerivce;
+	
 	public void add(User user) {
 		userDao.add(user);
-		int userId = userDao.getId(user.getUserName());
-		roleDao.addRole(userId, YOUKE);
+		//int userId = userDao.getId(user.getUserName());
+		//roleDao.addRole(userId, HUIYUAN);
 	}
 
 	public int getUserId(String userName){
 		return userDao.getId(userName);
 	}
-	
-	public int delete(Integer id) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
-	public int delete(User t) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	public int update(User t) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	public User getById(int id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public User getByName(String name) {
-		//return userDao.getByName(name);
-		return null;
-	}
-
-	public List<String> getStringById(int id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public List<String> getStringByString(String name) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public List<User> get(Map<String, Object> map) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public List<User> getAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Long getTotal(User t) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<User> getAll(String page,String number) {
+		return userDao.getAll((Integer.valueOf(page)-1)*Integer.valueOf(number),Integer.valueOf(number));
 	}
 
 	public User getUserAndRoleByUserName(String userName) {
 		return userDao.getUserAndRole(userName);
+	}
+
+	public int getCount() {
+		return userDao.getCount();
+	}
+
+	public void update(User user) {
+		userDao.update(user);
+	}
+
+	public void deleteById(String ids) {
+		String[] userIds = ids.split(",");
+		for(String userId:userIds){
+			orderSerivce.deleteAll(Integer.valueOf(userId));
+			List<Goods> goodsList = goodsService.getByUserId(Integer.valueOf(userId));
+			for(Goods g:goodsList){
+				goodsService.deleteGoods(g.getGoodsId());
+			}
+			roleDao.deleteRoleByUserId(Integer.valueOf(userId));
+			userDao.deleteById(Integer.valueOf(userId));
+		System.out.println("ÒÑÉ¾³ý--"+userId);
+		}
 	}
 
 }

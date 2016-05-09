@@ -25,4 +25,16 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		from type
 		where typeName=#{name}
 	</select>
+	
+	<select id="getById" resultType="Type">
+		select * 
+		from type
+		where typeId=#{typeId}
+	</select>
+	
+	<select id="getTypeName" resultType="String">
+		select typeName
+		from type
+		where typeId = #{typeId}
+	</select>
 </mapper>

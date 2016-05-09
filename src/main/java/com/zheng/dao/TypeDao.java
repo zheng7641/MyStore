@@ -60,7 +60,14 @@ public interface TypeDao {
 	 * @param id
 	 * @return int
 	 */
-	public Type getById(int id);
+	public Type getById(int typeId);
+	
+	/**
+	 * 获取 typeName
+	 * @param typeId
+	 * @return
+	 */
+	public String getTypeName(int typeId);
 	
 	/**
 	 * 通过类型名查询

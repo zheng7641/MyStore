@@ -1,11 +1,8 @@
 package com.zheng.entity;
 
-import java.util.Date;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
-
-import com.sun.jmx.snmp.Timestamp;
 
 @Component
 public class Goods {
@@ -18,9 +15,12 @@ public class Goods {
 	private String tradingPosition;
 	private String contactInformation;
 	private String businessDeal; // 交易方式
-	private Date createTime;
+	private String createTime;
 	private int userId;
-
+	private String imageUrl;
+	private String typeId;
+	private String typeName;
+	
 	private Type type;
 	private List<GoodsMessage> goodsMessage;
 	private List<User> userList;
@@ -31,7 +31,7 @@ public class Goods {
 	}
 
 	public Goods(String goodsName, String goodsDescription, int price, String quality, String tradingPosition,
-			String contactInformation, String businessDeal, Date createTime, Type type, List<GoodsMessage> goodsMessage,
+			String contactInformation, String businessDeal, String createTime, Type type, List<GoodsMessage> goodsMessage,
 			List<User> userList, List<Images> imagesList) {
 		super();
 		this.goodsName = goodsName;
@@ -49,7 +49,7 @@ public class Goods {
 	}
 
 	public Goods(int goodsId, String goodsName, String goodsDescription, int price, String quality,
-			String tradingPosition, String contactInformation, String businessDeal, Date createTime, Type type,
+			String tradingPosition, String contactInformation, String businessDeal, String createTime, Type type,
 			List<GoodsMessage> goodsMessage, List<User> userList, List<Images> imagesList) {
 		super();
 		this.goodsId = goodsId;
@@ -131,11 +131,11 @@ public class Goods {
 		this.businessDeal = businessDeal;
 	}
 
-	public Date getCreateTime() {
+	public String getCreateTime() {
 		return createTime;
 	}
 
-	public void setCreateTime(Date createTime) {
+	public void setCreateTime(String createTime) {
 		this.createTime = createTime;
 	}
 
@@ -179,13 +179,38 @@ public class Goods {
 		this.userId = userId;
 	}
 
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
+
+	public String getTypeId() {
+		return typeId;
+	}
+
+	public void setTypeId(String typeId) {
+		this.typeId = typeId;
+	}
+
+	public String getTypeName() {
+		return typeName;
+	}
+
+	public void setTypeName(String typeName) {
+		this.typeName = typeName;
+	}
+
 	@Override
 	public String toString() {
 		return "Goods [goodsId=" + goodsId + ", goodsName=" + goodsName + ", goodsDescription=" + goodsDescription
 				+ ", price=" + price + ", quality=" + quality + ", tradingPosition=" + tradingPosition
 				+ ", contactInformation=" + contactInformation + ", businessDeal=" + businessDeal + ", createTime="
-				+ createTime + ", userId=" + userId + ", type=" + type + ", goodsMessage=" + goodsMessage
-				+ ", userList=" + userList + ", imagesList=" + imagesList + "]";
+				+ createTime + ", userId=" + userId + ", imageUrl=" + imageUrl + ", typeId=" + typeId + ", typeName="
+				+ typeName + ", type=" + type + ", goodsMessage=" + goodsMessage + ", userList=" + userList
+				+ ", imagesList=" + imagesList + "]";
 	}
 
 }

@@ -47,4 +47,10 @@ public class TypeTest {
 		Type type = typeDao.getByName("ÀºÇò");
 		System.out.println(type);
 	}
+	
+	@Test
+	public void getTypeName(){
+		String typeName = typeDao.getTypeName(2);
+		System.out.println(typeName);
+	}
 }

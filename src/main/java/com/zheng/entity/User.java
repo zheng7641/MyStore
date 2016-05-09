@@ -15,6 +15,8 @@ public class User {
 	private String sex;
 	private String phone;
 	private String location;
+	private String createTime;
+	private String email;
 
 	private List<Role> roleList;
 	private List<GoodsMessage> goodsMessageList;
@@ -24,18 +26,8 @@ public class User {
 		super();
 	}
 
-	public User(String userName, String password, String nickName, String sex, String phone, String location) {
-		super();
-		this.userName = userName;
-		this.password = password;
-		this.nickName = nickName;
-		this.sex = sex;
-		this.phone = phone;
-		this.location = location;
-	}
-
 	public User(String userName, String password, String nickName, String sex, String phone, String location,
-			List<Role> roleList, List<GoodsMessage> goodsMessageList, List<Goods> goodsList) {
+			String createTime, String email) {
 		super();
 		this.userName = userName;
 		this.password = password;
@@ -43,13 +35,12 @@ public class User {
 		this.sex = sex;
 		this.phone = phone;
 		this.location = location;
-		this.roleList = roleList;
-		this.goodsMessageList = goodsMessageList;
-		this.goodsList = goodsList;
+		this.createTime = createTime;
+		this.email = email;
 	}
 
 	public User(int userId, String userName, String password, String nickName, String sex, String phone,
-			String location, List<Role> roleList, List<GoodsMessage> goodsMessageList, List<Goods> goodsList) {
+			String location, String createTime, String email) {
 		super();
 		this.userId = userId;
 		this.userName = userName;
@@ -58,6 +49,40 @@ public class User {
 		this.sex = sex;
 		this.phone = phone;
 		this.location = location;
+		this.createTime = createTime;
+		this.email = email;
+	}
+
+	public User(String userName, String password, String nickName, String sex, String phone, String location,
+			String createTime, String email, List<Role> roleList, List<GoodsMessage> goodsMessageList,
+			List<Goods> goodsList) {
+		super();
+		this.userName = userName;
+		this.password = password;
+		this.nickName = nickName;
+		this.sex = sex;
+		this.phone = phone;
+		this.location = location;
+		this.createTime = createTime;
+		this.email = email;
+		this.roleList = roleList;
+		this.goodsMessageList = goodsMessageList;
+		this.goodsList = goodsList;
+	}
+
+	public User(int userId, String userName, String password, String nickName, String sex, String phone,
+			String location, String createTime, String email, List<Role> roleList, List<GoodsMessage> goodsMessageList,
+			List<Goods> goodsList) {
+		super();
+		this.userId = userId;
+		this.userName = userName;
+		this.password = password;
+		this.nickName = nickName;
+		this.sex = sex;
+		this.phone = phone;
+		this.location = location;
+		this.createTime = createTime;
+		this.email = email;
 		this.roleList = roleList;
 		this.goodsMessageList = goodsMessageList;
 		this.goodsList = goodsList;
@@ -119,6 +144,22 @@ public class User {
 		this.location = location;
 	}
 
+	public String getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(String createTime) {
+		this.createTime = createTime;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public List<Role> getRoleList() {
 		return roleList;
 	}
@@ -146,8 +187,9 @@ public class User {
 	@Override
 	public String toString() {
 		return "User [userId=" + userId + ", userName=" + userName + ", password=" + password + ", nickName=" + nickName
-				+ ", sex=" + sex + ", phone=" + phone + ", location=" + location + ", roleList=" + roleList
-				+ ", goodsMessageList=" + goodsMessageList + ", goodsList=" + goodsList + "]";
+				+ ", sex=" + sex + ", phone=" + phone + ", location=" + location + ", createTime=" + createTime
+				+ ", email=" + email + ", roleList=" + roleList + ", goodsMessageList=" + goodsMessageList
+				+ ", goodsList=" + goodsList + "]";
 	}
 
 }

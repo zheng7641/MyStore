@@ -9,6 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.zheng.dao.OrderDao;
 import com.zheng.entity.Goods;
+import com.zheng.entity.OrderResultSet;
 
 public class OrderTest {
 
@@ -32,5 +33,23 @@ public class OrderTest {
 	@Test
 	public void delete(){
 		orderDao.delete(1, 25);
+	}
+	
+	@Test
+	public void deleteAll(){
+		orderDao.deleteAll(1);
+	}
+	
+	@Test
+	public void getList(){
+		List<OrderResultSet> orderList = orderDao.getList(0, 3);
+		for(OrderResultSet o:orderList){
+			System.out.println(o);
+		}
+	}
+	
+	@Test
+	public void getCount(){
+		System.out.println(orderDao.getCount());
 	}
 }

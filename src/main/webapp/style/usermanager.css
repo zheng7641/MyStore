@@ -405,6 +405,10 @@ a.files, a.files input {
     background-color: #efefef;
 }
 
+.goumai{
+	float:right;
+	margin-right:50px;
+}
 
 /* 分页栏 */
 .bottompage {

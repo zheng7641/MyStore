@@ -17,7 +17,7 @@
 	<div id="crumb-bar">
 		<div class="crumb-bar">
 			<div class="crumbs">
-				<span>个人闲置</span> <span>></span> <a href="#">${type }</a>
+				<span>个人闲置</span> <span>></span> <a href="#">${search }</a>
 			</div>
 		</div>
 	</div>
@@ -101,7 +101,7 @@
 	        pageCount:${pageNum },
 	        current:${page },
 	        backFn:function(p){
-	        	window.location.href="http://localhost:8080/MyStore/list.do?type=${type}&page="+p;
+	        	window.location.href="http://localhost:8080/MyStore/search.do?search=${search}&page="+p;
 	        }
 	    })
 	});

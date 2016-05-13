@@ -25,47 +25,47 @@
 				<div class="nav_left">
 					<div class="nav_item" onmouseover="mouseOver()" onmouseout="mouseOut()">
 						<div class="nav_item_a">
-							<a href="type.do?typeName=家用电器">家用电器</a>
+							<a href="http://localhost:8080/MyStore/list.do?type=家用电器">家用电器</a>
 						</div>
 					</div>
 					<div class="nav_item" onmouseover="mouseOver1()" onmouseout="mouseOut1()">
 						<div class="nav_item_a">
-							<a href="type.do?typeName=手机">手机、数码</a>
+							<a href="http://localhost:8080/MyStore/list.do?type=手机">手机、数码</a>
 						</div>
 					</div>
 					<div class="nav_item" onmouseover="mouseOver2()" onmouseout="mouseOut2()">
 						<div class="nav_item_a">
-							<a href="type.do?typeName=办公">电脑、办公</a>
+							<a href="http://localhost:8080/MyStore/list.do?type=办公">电脑、办公</a>
 						</div>
 					</div>
 					<div class="nav_item" onmouseover="mouseOver3()" onmouseout="mouseOut3()">
 						<div class="nav_item_a">
-							<a href="type.do?typeName=厨具">家居、厨具</a>
+							<a href="http://localhost:8080/MyStore/list.do?type=厨具">家居、厨具</a>
 						</div>
 					</div>
 					<div class="nav_item" onmouseover="mouseOver4()" onmouseout="mouseOut4()">
 						<div class="nav_item_a">
-							<a href="type.do?typeName=男装">男装、女装</a>
+							<a href="http://localhost:8080/MyStore/list.do?type=男装">男装、女装</a>
 						</div>
 					</div>
 					<div class="nav_item" onmouseover="mouseOver5()" onmouseout="mouseOut5()">
 						<div class="nav_item_a">
-							<a href="#">化妆品</a>
+							<a href="http://localhost:8080/MyStore/list.do?type=化妆品">化妆品</a>
 						</div>
 					</div>
 					<div class="nav_item" onmouseover="mouseOver6()" onmouseout="mouseOut6()">
 						<div class="nav_item_a">
-							<a href="#">鞋靴、箱包、钟表</a>
+							<a href="http://localhost:8080/MyStore/list.do?type=鞋">鞋靴、箱包、钟表</a>
 						</div>
 					</div>
 					<div class="nav_item" onmouseover="mouseOver7()" onmouseout="mouseOut7()">
 						<div class="nav_item_a">
-							<a href="#">运动、骑行</a>
+							<a href="http://localhost:8080/MyStore/list.do?type=自行车">运动、骑行</a>
 						</div>
 					</div>
 					<div class="nav_item" onmouseover="mouseOver8()" onmouseout="mouseOut8()">
 						<div class="nav_item_a">
-							<a href="#">图书、音像</a>
+							<a href="http://localhost:8080/MyStore/list.do?type=书">图书、音像</a>
 						</div>
 					</div>
 				</div>
@@ -76,48 +76,48 @@
 						<div class="subitems">
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">大家电</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=大家电">大家电</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">冰箱</a> 
-									<a class="subitems_dd_a" href="#">洗衣机</a>
-									<a class="subitems_dd_a" href="#">音响</a>
-									<a class="subitems_dd_a" href="#">热水器</a>
-									<a class="subitems_dd_a" href="#">家电配件</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=冰箱">冰箱</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=洗衣机">洗衣机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=音响">音响</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=热水器">热水器</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=家电配件">家电配件</a>
 								</dd>
 							</dl>
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">生活电器</a>
+									<a href="type.do?typeName=生活电器">生活电器</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">加湿器</a>
-									<a class="subitems_dd_a" href="#">熨斗</a>
-									<a class="subitems_dd_a" href="#">小插座</a>
-									<a class="subitems_dd_a" href="#">除湿机</a>
-									<a class="subitems_dd_a" href="#">干衣机</a>
-									<a class="subitems_dd_a" href="#">收音机</a>
-									<a class="subitems_dd_a" href="#">取暖电器</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=加湿器">加湿器</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=熨斗">熨斗</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=小插座">小插座</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=除湿机">除湿机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=干衣机">干衣机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=收音机">收音机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=取暖电器">取暖电器</a>
 
 								</dd>
 							</dl>
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">厨房电器</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=厨房电器">厨房电器</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">电饭煲</a> 
-									<a class="subitems_dd_a" href="#">豆浆机</a>
-									<a class="subitems_dd_a" href="#">面包机</a>
-									<a class="subitems_dd_a" href="#">咖啡机</a>
-									<a class="subitems_dd_a" href="#">榨汁机</a>
-									<a class="subitems_dd_a" href="#">电烤箱</a>
-									<a class="subitems_dd_a" href="#">电磁炉</a>
-									<a class="subitems_dd_a" href="#">煮蛋器</a>
-									<a class="subitems_dd_a" href="#">酸奶机</a>
-									<a class="subitems_dd_a" href="#">热水壶</a>
-									<a class="subitems_dd_a" href="#">多用途锅</a>
-									<a class="subitems_dd_a" href="#">其他厨房电器</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=电饭煲">电饭煲</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=豆浆机">豆浆机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=面包机">面包机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=咖啡机">咖啡机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=榨汁机">榨汁机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=电烤箱">电烤箱</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=电磁炉">电磁炉</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=煮蛋器">煮蛋器</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=酸奶机">酸奶机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=热水壶">热水壶</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=多用途锅">多用途锅</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=其他厨房电器">其他厨房电器</a>
 								</dd>
 							</dl>
 						</div>
@@ -127,52 +127,52 @@
 						<div class="subitems">
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">手机配件</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=手机配件">手机配件</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">电池</a> 
-									<a class="subitems_dd_a" href="#">蓝牙耳机</a>
-									<a class="subitems_dd_a" href="#">数据线</a>
-									<a class="subitems_dd_a" href="#">耳机</a>
-									<a class="subitems_dd_a" href="#">手机支架</a>
-									<a class="subitems_dd_a" href="#">贴膜</a> 
-									<a class="subitems_dd_a" href="#">保护套</a>
-									<a class="subitems_dd_a" href="#">创意配件</a>
-									<a class="subitems_dd_a" href="#">音响</a>
-									<a class="subitems_dd_a" href="#">手机饰品</a>
-									<a class="subitems_dd_a" href="#">拍照配件</a> 
-									<a class="subitems_dd_a" href="#">其他手机配件</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=电池">电池</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=蓝牙耳机">蓝牙耳机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=数据线">数据线</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=耳机">耳机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=手机支架">手机支架</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=贴膜">贴膜</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=保护套">保护套</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=创意配件">创意配件</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=音响">音响</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=手机饰品">手机饰品</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=拍照配件">拍照配件</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=其他手机配件">其他手机配件</a>
 								</dd>
 							</dl>
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">摄影摄像</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=摄影摄像">摄影摄像</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">数码相机</a>
-									<a class="subitems_dd_a" href="#">微单相机</a>
-									<a class="subitems_dd_a" href="#">单反相机</a>
-									<a class="subitems_dd_a" href="#">拍立得</a>
-									<a class="subitems_dd_a" href="#">摄像机</a>
-									<a class="subitems_dd_a" href="#">镜头</a>
-									<a class="subitems_dd_a" href="#">户外器材</a>
-									<a class="subitems_dd_a" href="#">影棚器材</a>
-									<a class="subitems_dd_a" href="#">冲印服务</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=数码相机">数码相机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=微单相机">微单相机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=单反相机">单反相机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=拍立得">拍立得</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=摄像机">摄像机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=镜头">镜头</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=户外器材">户外器材</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=影棚器材">影棚器材</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=冲印服务">冲印服务</a>
 								</dd>
 							</dl>
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">数码配件</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=数码配件">数码配件</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">存储卡</a> 
-									<a class="subitems_dd_a" href="#">读卡器</a>
-									<a class="subitems_dd_a" href="#">支架</a>
-									<a class="subitems_dd_a" href="#">滤镜</a>
-									<a class="subitems_dd_a" href="#">自拍神器</a>
-									<a class="subitems_dd_a" href="#">三脚架</a>
-									<a class="subitems_dd_a" href="#">相机包</a>
-									<a class="subitems_dd_a" href="#">其他配件</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=存储卡">存储卡</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=读卡器">读卡器</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=支架">支架</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=滤镜">滤镜</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=自拍神器">自拍神器</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=三脚架">三脚架</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=相机包">相机包</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=其他配件">其他配件</a>
 								</dd>
 							</dl>
 						</div>
@@ -182,40 +182,40 @@
 						<div class="subitems">
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">电脑整机</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=电脑整机">电脑整机</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">笔记本</a> 
-									<a class="subitems_dd_a" href="#">超极本</a>
-									<a class="subitems_dd_a" href="#">游戏本</a>
-									<a class="subitems_dd_a" href="#">平板电脑</a>
-									<a class="subitems_dd_a" href="#">平板电脑配件</a>
-									<a class="subitems_dd_a" href="#">台式机</a> 
-									<a class="subitems_dd_a" href="#">一体机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=笔记本">笔记本</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=超极本">超极本</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=游戏本">游戏本</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=平板电脑">平板电脑</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=平板电脑配件">平板电脑配件</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=台式机">台式机</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=一体机">一体机</a>
 								</dd>
 							</dl>
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">办公设备</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=办公设备">办公设备</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">摄影机</a>
-									<a class="subitems_dd_a" href="#">投影配件</a>
-									<a class="subitems_dd_a" href="#">打印机</a>
-									<a class="subitems_dd_a" href="#">点钞机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=摄影机">摄影机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=投影配件">投影配件</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=打印机">打印机</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=点钞机">点钞机</a>
 								</dd>
 							</dl>
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">文具耗材</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=文具耗材">文具耗材</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">纸类</a> 
-									<a class="subitems_dd_a" href="#">办公文具</a>
-									<a class="subitems_dd_a" href="#">计算器</a>
-									<a class="subitems_dd_a" href="#">笔类</a>
-									<a class="subitems_dd_a" href="#">画具画材</a>
-									<a class="subitems_dd_a" href="#">其他耗材</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=纸类">纸类</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=办公文具">办公文具</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=计算器">计算器</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=笔类">笔类</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=画具画材">画具画材</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=其他耗材">其他耗材</a>
 								</dd>
 							</dl>
 						</div>
@@ -225,38 +225,38 @@
 						<div class="subitems">
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">厨具</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=厨具">厨具</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">烹饪锅具</a> 
-									<a class="subitems_dd_a" href="#">到剪菜板</a>
-									<a class="subitems_dd_a" href="#">茶具</a>
-									<a class="subitems_dd_a" href="#">咖啡具</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=烹饪锅具">烹饪锅具</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=到剪菜板">到剪菜板</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=茶具">茶具</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=咖啡具">咖啡具</a>
 								</dd>
 							</dl>
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">灯具</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=灯具">灯具</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">台灯</a>
-									<a class="subitems_dd_a" href="#">LED灯</a>
-									<a class="subitems_dd_a" href="#">落地灯</a>
-									<a class="subitems_dd_a" href="#">手电</a>
-									<a class="subitems_dd_a" href="#">其他灯具</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=台灯">台灯</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=LED灯">LED灯</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=落地灯">落地灯</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=手电">手电</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=其他灯具">其他灯具</a>
 								</dd>
 							</dl>
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">生活日用</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=生活日用">生活日用</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">收纳用品</a> 
-									<a class="subitems_dd_a" href="#">雨伞雨具</a>
-									<a class="subitems_dd_a" href="#">遮阳伞</a>
-									<a class="subitems_dd_a" href="#">浴室用品</a>
-									<a class="subitems_dd_a" href="#">针织用品</a>
-									<a class="subitems_dd_a" href="#">清洁工具</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=收纳用品">收纳用品</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=雨伞雨具">雨伞雨具</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=遮阳伞">遮阳伞</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=浴室用品">浴室用品</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=针织用品">针织用品</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=清洁工具">清洁工具</a>
 								</dd>
 							</dl>
 						</div>
@@ -266,33 +266,33 @@
 						<div class="subitems">
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">男装</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=男装">男装</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">男装</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=男装">男装</a> 
 								</dd>
 							</dl>
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">女装</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=女装">女装</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">女装</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=女装">女装</a>
 								</dd>
 							</dl>
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">配饰</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=配饰">配饰</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">丝巾</a> 
-									<a class="subitems_dd_a" href="#">腰带</a>
-									<a class="subitems_dd_a" href="#">围巾</a>
-									<a class="subitems_dd_a" href="#">帽子</a>
-									<a class="subitems_dd_a" href="#">手套</a>
-									<a class="subitems_dd_a" href="#">太阳镜</a>
-									<a class="subitems_dd_a" href="#">游泳镜</a>
-									<a class="subitems_dd_a" href="#">遮阳伞</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=丝巾">丝巾</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=腰带">腰带</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=围巾">围巾</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=帽子">帽子</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=手套">手套</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=太阳镜">太阳镜</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=游泳镜">游泳镜</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=遮阳伞">遮阳伞</a>
 								</dd>
 							</dl>
 						</div>
@@ -302,37 +302,37 @@
 						<div class="subitems">
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">面部护肤</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=面部护肤">面部护肤</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">清洁</a> 
-									<a class="subitems_dd_a" href="#">护肤</a> 
-									<a class="subitems_dd_a" href="#">面膜</a>
-									<a class="subitems_dd_a" href="#">剃须</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=清洁">清洁</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=护肤">护肤</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=面膜">面膜</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=剃须">剃须</a>
 								</dd>
 							</dl>
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">洗发护发</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=洗发护发">洗发护发</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">洗发</a>
-									<a class="subitems_dd_a" href="#">护发</a>
-									<a class="subitems_dd_a" href="#">造型</a>
-									<a class="subitems_dd_a" href="#">假发</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=洗发">洗发</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=护发">护发</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=造型">造型</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=假发">假发</a>
 								</dd>
 							</dl>
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">香水彩妆</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=香水彩妆">香水彩妆</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">香水</a> 
-									<a class="subitems_dd_a" href="#">底妆</a>
-									<a class="subitems_dd_a" href="#">腮红</a>
-									<a class="subitems_dd_a" href="#">眼部</a>
-									<a class="subitems_dd_a" href="#">唇部</a>
-									<a class="subitems_dd_a" href="#">美甲</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=香水">香水</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=底妆">底妆</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=腮红">腮红</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=眼部">眼部</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=唇部">唇部</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=美甲">美甲</a>
 								</dd>
 							</dl>
 						</div>
@@ -342,29 +342,29 @@
 						<div class="subitems">
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">鞋</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=鞋">鞋</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">男鞋</a> 
-									<a class="subitems_dd_a" href="#">女鞋</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=男鞋">男鞋</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=女鞋">女鞋</a>
 								</dd>
 							</dl>
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">包</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=包">包</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">男包</a>
-									<a class="subitems_dd_a" href="#">女包</a>
-									<a class="subitems_dd_a" href="#">功能箱包</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=男包">男包</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=女包">女包</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=功能箱包">功能箱包</a>
 								</dd>
 							</dl>
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">表</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=表">表</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">钟表</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=钟表">钟表</a> 
 								</dd>
 							</dl>
 						</div>
@@ -374,32 +374,32 @@
 						<div class="subitems">
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">骑行运动</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=骑行运动">骑行运动</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">山地车</a> 
-									<a class="subitems_dd_a" href="#">公路车</a>
-									<a class="subitems_dd_a" href="#">小标题</a>
-									<a class="subitems_dd_a" href="#">电动车</a>
-									<a class="subitems_dd_a" href="#">平衡车</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=山地车">山地车</a> 
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=公路车">公路车</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=小标题">小标题</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=电动车">电动车</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=平衡车">平衡车</a>
 								</dd>
 							</dl>
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">体育用品</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=体育用品">体育用品</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">乒乓球</a>
-									<a class="subitems_dd_a" href="#">羽毛球</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=乒乓球">乒乓球</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=羽毛球">羽毛球</a>
 									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=篮球">篮球</a>
-									<a class="subitems_dd_a" href="#">足球</a>
-									<a class="subitems_dd_a" href="#">轮滑滑板</a>
-									<a class="subitems_dd_a" href="#">网球</a>
-									<a class="subitems_dd_a" href="#">高尔夫</a>
-									<a class="subitems_dd_a" href="#">台球</a>
-									<a class="subitems_dd_a" href="#">排球</a>
-									<a class="subitems_dd_a" href="#">钓鱼</a>
-									<a class="subitems_dd_a" href="#">游泳镜</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=足球">足球</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=轮滑滑板">轮滑滑板</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=网球">网球</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=高尔夫">高尔夫</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=台球">台球</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=排球">排球</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=钓鱼">钓鱼</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=游泳镜">游泳镜</a>
 								</dd>
 							</dl>
 						</div>
@@ -409,10 +409,10 @@
 						<div class="subitems">
 							<dl class="subitems_dl">
 								<dt class="subitems_dt">
-									<a href="#">图书</a>
+									<a href="http://localhost:8080/MyStore/list.do?type=图书">图书</a>
 								</dt>
 								<dd class="subitems_dd">
-									<a class="subitems_dd_a" href="#">音像制品</a>
+									<a class="subitems_dd_a" href="http://localhost:8080/MyStore/list.do?type=音像制品">音像制品</a>
 
 								</dd>
 							</dl>
@@ -453,7 +453,7 @@
 				</div>
 				<div class="nav_button">
 					<div class="nav_btn_1">
-						<a href="#"> <span class="btn_title">发布闲置</span> <span
+						<a href="http://localhost:8080/MyStore/publish.jsp"> <span class="btn_title">发布闲置</span> <span
 							class="btn_subtitle">闲置换钱&nbsp;快速出售</span>
 						</a>
 					</div>
@@ -518,7 +518,7 @@
 			</div>
 			<div class="content_push">
 				<!-- 推荐栏 -->
-				<c:forEach items="${loveGoods}" var="goods" begin="0" end ="9">
+				<c:forEach items="${loveGoods}" var="goods" begin="0" end ="4">
 				<a href="${pageContext.request.contextPath}/good.do?goodId=${goods.goodsId}" class="content_push_sub">
 					<img class="content_push_sub_img" src="${goods.imagesList[0].imagesUrl }" />
 					<span class="content_push_sub_title">${goods.goodsName }</span>

@@ -47,10 +47,24 @@ public class IndexController {
 		request.getRequestDispatcher("/goodlist.jsp").forward(request, response);
 	}
 	
+	@RequestMapping("/search")
+	public void getSearchList(@RequestParam(value="search",required=false)String search,@RequestParam(value="page",required=false)String page,HttpServletRequest request,HttpServletResponse response) throws Exception{
+		request.setAttribute("hotList", goodsService.getHotGoods());
+		if(page==null||page.equals("")||Integer.valueOf(page)<1){
+			page = "1";
+		}
+		request.setAttribute("search", search);//商品类型
+		request.setAttribute("page", page);//当前页
+		request.setAttribute("pageNum", goodsService.getSearchNum(search));//总页数
+		request.setAttribute("goodsList", goodsService.getSearchList(search, 16*(Integer.valueOf(page)-1), 16));
+		request.getRequestDispatcher("/searchlist.jsp").forward(request, response);
+	}
+	
 	@RequestMapping("/good")
-	public void getPage(@RequestParam(value="goodId",required=false)String id,HttpServletRequest request,HttpServletResponse response) throws Exception{
-		request.setAttribute("goods", goodsService.getById(Integer.valueOf(id)));
-		request.setAttribute("otherGoodsList", goodsService.getBySeller(Integer.valueOf(id)));
+	public void getPage(@RequestParam(value="goodId",required=false)String goodId,HttpServletRequest request,HttpServletResponse response) throws Exception{
+		request.setAttribute("goodId", goodId);
+		request.setAttribute("goods", goodsService.getById(Integer.valueOf(goodId)));
+		request.setAttribute("otherGoodsList", goodsService.getBySeller(Integer.valueOf(goodId)));
 		request.getRequestDispatcher("/goods.jsp").forward(request, response);
 	}
 	

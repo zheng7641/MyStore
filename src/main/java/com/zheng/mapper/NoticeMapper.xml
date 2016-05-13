@@ -11,10 +11,23 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</resultMap>
 	
 	<select id="get" resultMap="NoticeMap">
-		select * from notice where noticeid limit #{first},#{number}
+		select * 
+		from 
+		(select * from notice
+		order by noticeid desc) n
+		where n.noticeid limit #{first},#{number}
 	</select>
 	
 	<select id="getOneNotice" resultMap="NoticeMap">
 		select * from notice where noticeId = #{noticeId}
 	</select>
+	
+	<select id="getCount" resultType="Integer">
+		select count(*) from notice;
+	</select>
+	
+	<insert id="add" parameterType="Notice">
+		insert into notice(noticeTitle,createTime,content)
+		values(#{noticeTitle},#{createTime},#{content})
+	</insert>
 </mapper>

@@ -224,7 +224,24 @@ public class GoodsServiceImpl implements GoodsService{
 		String[] goodsIds = ids.split(",");
 		for(String goodsId:goodsIds){
 			imagesDao.deleteImages(Integer.valueOf(goodsId));
+			orderDao.deleteByGoodsId(Integer.valueOf(goodsId));
 			goodsDao.delete(Integer.valueOf(goodsId));
 		}
+	}
+
+	
+	/**
+	 * 获取搜索出的总数
+	 */
+	public int getSearchNum(String search) {
+		return goodsDao.getSearchNum(search)/16+1;
+	}
+
+	public List<Goods> getSearchList(String search, int first, int number) {
+		List<Goods> goodsList =  goodsDao.getSearchList(search,first,number);
+		for(Goods g:goodsList){
+			g.setImagesList(imagesDao.getByGoodsId(g.getGoodsId()));
+		}
+		return goodsList;
 	}
 }

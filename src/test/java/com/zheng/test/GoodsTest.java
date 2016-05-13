@@ -143,4 +143,18 @@ public class GoodsTest {
 		int count = goodsDao.getCount();
 		System.out.println(count);
 	}
+	
+	@Test
+	public void getSearchCount(){
+		int count = goodsDao.getSearchNum("±ùÏä");
+		System.out.println(count);
+	}
+	
+	@Test
+	public void getSearchList(){
+		List<Goods> goodsList = goodsDao.getSearchList("±ùÏä", 0, 5);
+		for(Goods g:goodsList){
+			System.out.println(g);
+		}
+	}
 }

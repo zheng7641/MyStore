@@ -41,4 +41,8 @@ public interface GoodsService {
 	public int getCount();
 	
 	public void delete(String ids);
+
+	public int getSearchNum(String search);
+
+	public List<Goods> getSearchList(String search, int first, int number);
 }

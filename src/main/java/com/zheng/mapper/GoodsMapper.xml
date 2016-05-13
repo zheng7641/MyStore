@@ -156,4 +156,17 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="getCount" resultType="Integer">
 		select count(*) from goods;
 	</select>
+	
+	<select id="getSearchNum" parameterType="String" resultType="Integer">
+		select count(*)
+		from goods
+		where goodsName like CONCAT('%',#{search},'%')  
+	</select>
+	
+	<select id="getSearchList" resultType="Goods">
+		select *
+		from goods
+		where goodsName like CONCAT('%',#{search},'%')  
+		and goodsId limit #{first},#{number}
+	</select>
 </mapper>

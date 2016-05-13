@@ -44,7 +44,7 @@
 						class="right_intro_detailed_span1">${goods.businessDeal }</span></li>
 				</ul>
 				<div class="right_intro_buynow">
-					<a class="right_intro_buynow_btn" href="#"></a>
+					<a class="right_intro_buynow_btn" href="http://localhost:8080/MyStore/order/addOrder.do?userId=${userId }&goodId=${goodId}"></a>
 				</div>
 			</div>
 		</div>

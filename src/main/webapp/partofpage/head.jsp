@@ -12,8 +12,8 @@
 				<span>欢迎来到二手商品网站</span>
 			</div>
 			<div class="right">
-				<a href="#">购物车</a> <a href="#">卖家中心</a> <a href="#">登录</a> <a
-					href="#">注册</a>
+				<a href="http://localhost:8080/MyStore/shoopingCart.do?userId=${userId }&page=1">购物车</a> <a href="http://localhost:8080/MyStore/usermanager.do?userId=${userId }">卖家中心</a> <a href="http://localhost:8080/MyStore/login.jsp">登录</a> <a
+					href="http://localhost:8080/MyStore/register.jsp">注册</a>
 			</div>
 		</div>
 	</div>
@@ -21,11 +21,11 @@
 	<div id="search">
 		<div class="search_wrapper">
 			<div class="logo">
-				<img src="image/logo3.jpg" />
+				<a href="http://localhost:8080/MyStore/index.do"><img src="image/logo3.jpg" /></a>
 			</div>
 			<div class="search_1">
 				<!-- 搜索框 -->
-				<form>
+				<form action="search.do" method="post">
 					<input class="search_1_input" type="text" name="search" /> <input
 						class="search_1_button" type="submit" value="搜索" />
 				</form>

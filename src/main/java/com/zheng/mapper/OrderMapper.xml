@@ -7,6 +7,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		delete from t_order where goodsId = #{goodsId}
 	</delete>
 
+	<insert id="add">
+		insert into t_order(orderId,goodsId,userId) values(#{orderId},#{goodsId},#{userId})
+	</insert>
+
 	<select id="getOrderList" resultType="Order">
 		select *
 		from t_order
@@ -27,7 +31,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		and
 		goodsId=#{goodsId}
 	</delete>
-
+	
 	<delete id="deleteAll">
 		delete from t_order
 		where userId = #{userId}

@@ -38,6 +38,7 @@ public class UserController {
 		UsernamePasswordToken token = new UsernamePasswordToken(userName, password);
 		try {
 			subject.login(token);
+			session.setAttribute("userId", userService.getUserId(userName));
 			session.setAttribute("userName", userName);
 			return "redirect:/index.do";
 		} catch (Exception e) {

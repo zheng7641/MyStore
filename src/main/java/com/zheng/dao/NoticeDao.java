@@ -47,4 +47,11 @@ public interface NoticeDao {
 	 * @return
 	 */
 	public List<Notice> get(@Param("first") int first,@Param("number") int number);
+
+	
+	/**
+	 * 获取总数
+	 * @return
+	 */
+	public int getCount();
 }

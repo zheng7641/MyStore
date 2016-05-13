@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 import com.zheng.entity.Goods;
+import com.zheng.entity.Order;
 import com.zheng.entity.OrderResultSet;
 
 public interface OrderDao {
@@ -13,7 +14,7 @@ public interface OrderDao {
 	 * 增加购物车
 	 * @return
 	 */
-	public int add();
+	public int add(Order order);
 	
 	/**
 	 * 获取用户的购物车
@@ -35,7 +36,7 @@ public interface OrderDao {
 	 * @param goodsId
 	 * @return
 	 */
-	public int deleteByGoodsId(int goodsId);
+	public int deleteByGoodsId(@Param("goodsId")int goodsId);
 	
 	/**
 	 * 删除购物车内商品

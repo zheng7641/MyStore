@@ -70,7 +70,10 @@
 		<property name="filterChainDefinitions">
 			<value>
 				/index.jsp=roles[admin]
-
+				/publish.jsp=roles[admin]
+				/usermanager.do=roles[admin]
+				/order/addOrder.do=roles[admin]
+				/shoopingCart.do=roles[admin]
 				/login=anon
 				/admin*=authc
 				/student=roles[teacher]

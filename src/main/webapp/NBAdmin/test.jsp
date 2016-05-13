@@ -29,7 +29,7 @@
 </script>
 </head>
 <body class="easyui-layout">
-	<div data-options="region:'north',border:false" style="height:60px;background:#FFF;padding:10px">二货后台管理系统</div>
+	<div data-options="region:'north',border:false" style="font-size:24px;height:60px;background:#E0ECFF;padding:10px">二货后台管理系统</div>
 	<div region="west" style="width: 200px" title="导航菜单" split="true">
 	<div class="easyui-accordion" data-options="fit:true,border:false">
 		<div title="用户管理" data-options="selected:true,iconCls:'icon-user'" style="padding: 10px">
@@ -41,17 +41,8 @@
 		<div title="订单管理"  data-options="iconCls:'icon-order'" style="padding:10px">
 			<a href="javascript:openTab('订单管理','orderManage.jsp','icon-order')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-manage'" style="width: 150px;">管理订单</a>
 		</div>
-		<div title="留言管理" data-options="iconCls:'icon-comment'" style="padding:10px">
-			<a href="javascript:openTab('留言管理','commentManage.jsp','icon-comment')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-manage'" style="width: 150px;">管理留言</a>
-		</div>
 		<div title="公告管理"  data-options="iconCls:'icon-notice'" style="padding:10px">
 			<a href="javascript:openTab('公告管理','noticeManage.jsp','icon-notice')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-manage'" style="width: 150px;">管理公告</a>
-		</div>
-		<div title="新闻管理"  data-options="iconCls:'icon-news'" style="padding:10px">
-			<a href="javascript:openTab('新闻管理','newsManage.jsp','icon-news')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-manage'" style="width: 150px;">管理新闻</a>
-		</div>
-		<div title="标签管理"  data-options="iconCls:'icon-tag'" style="padding:10px">
-			<a href="javascript:openTab('标签管理','tagManage.jsp','icon-tag')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-manage'" style="width: 150px;">管理标签</a>
 		</div>
 		<div title="系统管理"  data-options="iconCls:'icon-item'" style="padding:10px">
 			<a href="javascript:openPasswordModifyDialog()" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-modifyPassword'" style="width: 150px;">修改密码</a>

@@ -27,5 +27,18 @@ public class NoticeServiceImpl implements NoticeService{
 		return noticeDao.getOneNotice(noticeId);
 	}
 
+	public List<Notice> getNoticeList(int first, int number) {
+		return noticeDao.get(first, number);
+	}
+
+	public int getCount() {
+		return noticeDao.getCount();
+	}
+
+	public void add(Notice notice) {
+		noticeDao.add(notice);
+	}
+
+	
 	
 }

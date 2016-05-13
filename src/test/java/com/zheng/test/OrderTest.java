@@ -9,6 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.zheng.dao.OrderDao;
 import com.zheng.entity.Goods;
+import com.zheng.entity.Order;
 import com.zheng.entity.OrderResultSet;
 
 public class OrderTest {
@@ -51,5 +52,14 @@ public class OrderTest {
 	@Test
 	public void getCount(){
 		System.out.println(orderDao.getCount());
+	}
+	
+	@Test
+	public void add(){
+		Order order = new Order();
+		order.setGoodsId(104);
+		order.setOrderId(0);
+		order.setUserId(2);
+		orderDao.add(order);
 	}
 }

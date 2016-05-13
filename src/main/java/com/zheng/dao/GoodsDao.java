@@ -180,5 +180,14 @@ public interface GoodsDao {
 	 * @return
 	 */
 	public int getCount();
+
+	/**
+	 * 获取搜索结果总数
+	 * @param search
+	 * @return
+	 */
+	public int getSearchNum(String search);
+
+	public List<Goods> getSearchList(@Param("search")String search, @Param("first")int first, @Param("number")int number);
 	
 }

@@ -9,4 +9,10 @@ public interface NoticeService {
 	public List<Notice> getIndexNotice();
 	
 	public Notice getOneNotice(int noticeId);
+	
+	public List<Notice> getNoticeList(int first,int number);
+	
+	public int getCount();
+	
+	public void add(Notice notice);
 }

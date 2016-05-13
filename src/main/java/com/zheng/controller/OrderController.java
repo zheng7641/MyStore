@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.zheng.entity.Order;
 import com.zheng.entity.OrderResultSet;
 import com.zheng.service.OrderService;
 import com.zheng.util.WriteUtil;
@@ -35,5 +36,17 @@ public class OrderController {
 		result.put("rows", row);
 		result.put("total", count);
 		WriteUtil.write(response, result);
+	}
+	
+	@RequestMapping("addOrder")
+	public void addOrder(@RequestParam("userId")String userId,@RequestParam("goodId")String goodId,HttpServletResponse response) throws Exception{
+		Order order = new Order();
+		System.out.println(order);
+		order.setGoodsId(Integer.valueOf(goodId));
+		order.setOrderId(0);
+		order.setUserId(Integer.valueOf(userId));
+		System.out.println(order);
+		orderService.add(order);
+		response.sendRedirect("../good.do?goodId="+goodId);
 	}
 }

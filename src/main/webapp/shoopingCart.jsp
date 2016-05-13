@@ -20,8 +20,8 @@
 					<span>欢迎来到二手商品网站</span>
 				</div>
 				<div class="right">
-					<a href="#">购物车</a> <a href="#">卖家中心</a> <a href="#">登录</a> <a
-						href="#">注册</a>
+					<a href="http://localhost:8080/MyStore/shoopingCart.do?userId=${userId }&page=1">购物车</a> <a href="http://localhost:8080/MyStore/usermanager.do?userId=${userId }">卖家中心</a> <a href="http://localhost:8080/MyStore/login.jsp">登录</a> <a
+						href="http://localhost:8080/MyStore/register.jsp">注册</a>
 				</div>
 			</div>
 		</div>
@@ -31,11 +31,11 @@
 		<div class="content-wrapper">
 			<div class="search">
 				<div class="search-img">
-					<img src="image/logo3.jpg">
+					<a href="http://localhost:8080/MyStore/index.do"><img src="image/logo3.jpg"></a>
 				</div>
 				<div class="search-form">
 					<!-- 搜索框 -->
-					<form>
+					<form action="search.do" method="post">
 						<input class="search-form-input" type="text" name="search" /> <input
 							class="search-form-button" type="submit" value="搜索" />
 					</form>
@@ -53,9 +53,9 @@
 						</div>
 						<div class="um-left-wrapper-entry">
 							<ul>
-								<li class="um-left-wrapper-category"><a href="#">购物车</span></a>
-								<li class="um-left-wrapper-category"><a href="#">发布商品</span></a>
-								<li class="um-left-wrapper-category"><a href="#">已发布列表</span></a>
+								<li class="um-left-wrapper-category"><a href="http://localhost:8080/MyStore/shoopingCart.do?userId=${userId }&page=1">购物车</span></a>
+								<li class="um-left-wrapper-category"><a href="http://localhost:8080/MyStore/publish.jsp">发布商品</span></a>
+								<li class="um-left-wrapper-category"><a href="http://localhost:8080/MyStore/usermanager.do?userId=${userId }">已发布列表</span></a>
 							</ul>
 						</div>
 					</div>
@@ -63,6 +63,7 @@
 				<div class="um-right">
 					<div class="um-right-title">
 						<span>购物车</span>
+						<a class="goumai" href="#">购买</a>
 					</div>
 					<div class="um-right-wrapper">
 						
@@ -84,7 +85,7 @@
 									<span>￥</span> <span>${goods.price }</span>
 								</div>
 								<div class="um-right-items-num">
-									<span>2</span>
+									<span></span>
 								</div>
 								<div class="um-right-items-sum">
 									<span>￥</span> <span>${goods.price }</span>

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 import com.zheng.dao.ImagesDao;
 import com.zheng.dao.OrderDao;
+import com.zheng.entity.Order;
 import com.zheng.entity.OrderResultSet;
 import com.zheng.service.OrderService;
 
@@ -42,5 +43,9 @@ public class OrderServiceImpl implements OrderService{
 
 	public int getCount() {
 		return orderDao.getCount();
+	}
+
+	public void add(Order order) {
+		orderDao.add(order);
 	}
 }

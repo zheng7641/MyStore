@@ -592,13 +592,13 @@ a:hover, a:active {
 
 .footer{
 	width:1210px;
-	height:300px;
+	height:30px;
 	margin:0 auto;
 }
 
 .footer span{
 	display:block;
-	padding:250px 330px 0;
+	margin:10px 0px 0px 300px;
 }
 
 

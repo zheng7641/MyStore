@@ -22,7 +22,7 @@
 	
 	function openNoticeAddDialog(){
 		$("#dlg").dialog("open").dialog("setTitle","添加公告信息");
-		url="notice_save.action";
+		url="../addNotice.do";
 	}
 	
 	
@@ -116,14 +116,14 @@
 <body style="margin:1px;">
 	<table id="dg" title="公告管理" class="easyui-datagrid"
 	 fitColumns="true" pagination="true" rownumbers="true"
-	 url="notice_list.action" fit="true" toolbar="#tb">
+	 url="../getNoticeList.do" fit="true" toolbar="#tb">
 	 <thead>
 	 	<tr>
 	 		<th field="cb" checkbox="true" align="center"></th>
-	 		<th field="id" width="50" align="center">编号</th>
-	 		<th field="title" width="100" align="center">公告名称</th>
+	 		<th field="noticeId" width="50" align="center">编号</th>
+	 		<th field="noticeTitle" width="100" align="center">公告名称</th>
 	 		<th field="createTime" width="100" align="center">创建时间</th>
-	 		<th field="content" width="400" align="center" formatter="formatContent">内容</th>
+	 		<th field="content" width="400" align="center">内容</th>
 	 	</tr>
 	 </thead>
 	</table>
@@ -146,14 +146,13 @@
 	 		<table cellspacing="8px">
 	 			<tr>
 	 				<td>公告标题：</td>
-	 				<td colspan="4"><input type="text" id="title" name="notice.title" class="easyui-validatebox" required="true" style="width: 300px"/></td>
+	 				<td colspan="4"><input type="text" id="title" name="noticeTitle" class="easyui-validatebox" required="true" style="width: 300px"/></td>
 	 			</tr>
 	 			<tr>
 	 				<td valign="top">公告内容：</td>
 	 				<td colspan="4">
-	 					<textarea  id="content" name="notice.content" class="ckeditor"></textarea>
+	 					<textarea  id="content" name="content" class="ckeditor"></textarea>
 	 					
-	 					<input type="hidden" id="createTime" name="notice.createTime"/>
 	 				</td>
 	 			</tr>
 	 		</table>
